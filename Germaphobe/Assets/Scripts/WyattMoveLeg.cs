@@ -19,6 +19,7 @@ public class WyattMoveLeg : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
+    public AudioSource AudioSource;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -27,7 +28,7 @@ public class WyattMoveLeg : MonoBehaviour
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
     }
 
@@ -40,7 +41,15 @@ public class WyattMoveLeg : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.C))
         {
             Launch();
+
+            animator.Play("WyattShoot");
         }
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Eat();
+        }
+
     }
 
     void FixedUpdate()
@@ -52,12 +61,18 @@ public class WyattMoveLeg : MonoBehaviour
 
     void Launch()
     {
-        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+        GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position, Quaternion.identity);
 
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
         projectile.transform.parent = projectileContainerPrefab.transform;
-        animator.SetTrigger("Launch");
+        //animator.SetTrigger("Launch");
+    }
+
+    void Eat()
+    {
+        animator.Play("WyattEat");
+        AudioSource.Play();
     }
 }
 
