@@ -7,6 +7,7 @@ public class WyattMoveLeg : MonoBehaviour
     public float speed = 3.0f;
 
     public GameObject projectilePrefab;
+    public GameObject projectileContainerPrefab;
 
     public int health { get { return currentHealth; } }
     int currentHealth;
@@ -55,7 +56,7 @@ public class WyattMoveLeg : MonoBehaviour
 
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
-
+        projectile.transform.parent = projectileContainerPrefab.transform;
         animator.SetTrigger("Launch");
     }
 }
