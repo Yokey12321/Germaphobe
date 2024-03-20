@@ -45,8 +45,7 @@ public class WyattMoveLeg : MonoBehaviour
     void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
-        position.y = position.y + speed * vertical * Time.deltaTime;
-
+        position.y = Mathf.Clamp(position.y + speed * vertical * Time.deltaTime, -3, 3);
         rigidbody2d.MovePosition(position);
     }
 
