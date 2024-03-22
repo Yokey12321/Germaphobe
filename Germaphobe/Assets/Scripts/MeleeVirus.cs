@@ -12,7 +12,7 @@ public class MeleeVirus : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * speed * Time.deltaTime);
-        if (transform.position.x == -10f)
+        if (transform.position.x < -10f)
         {
            //healthBar.Damage(1);
             Destroy(gameObject);

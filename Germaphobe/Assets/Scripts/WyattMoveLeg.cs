@@ -8,7 +8,9 @@ public class WyattMoveLeg : MonoBehaviour
 
     public GameObject projectilePrefab;
     public GameObject projectileContainerPrefab;
-
+    public float projectileCooldown;
+    [SerializeField]
+    private float projectileTime = 0;
     public int health { get { return currentHealth; } }
     int currentHealth;
 
@@ -38,9 +40,11 @@ public class WyattMoveLeg : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         
 
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && projectileCooldown == projectileTime)
         {
             Launch();
+
+            projectileTime = 0;
 
             animator.Play("WyattShoot");
         }
@@ -57,6 +61,8 @@ public class WyattMoveLeg : MonoBehaviour
         Vector2 position = rigidbody2d.position;
         position.y = Mathf.Clamp(position.y + speed * vertical * Time.deltaTime, -3, 3);
         rigidbody2d.MovePosition(position);
+
+        projectileTime = Mathf.Clamp(projectileTime + Time.deltaTime, 0, projectileCooldown);
     }
 
     void Launch()
@@ -66,6 +72,7 @@ public class WyattMoveLeg : MonoBehaviour
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookDirection, 300);
         projectile.transform.parent = projectileContainerPrefab.transform;
+        projectile.GetComponent<Renderer>().sortingOrder = 100;
         //animator.SetTrigger("Launch");
     }
 

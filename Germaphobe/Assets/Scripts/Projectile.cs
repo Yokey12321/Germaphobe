@@ -24,6 +24,15 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<MeleeVirus>() != null)
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
+    }
+
     /*void OnCollisionEnter2D(Collision2D other)
     {
         EnemyController e = other.collider.GetComponent<EnemyController>();
