@@ -14,8 +14,13 @@ public class MeleeVirus : MonoBehaviour
         transform.Translate(Vector2.left * speed * Time.deltaTime);
         if (transform.position.x < -10f)
         {
-           //healthBar.Damage(1);
+            healthBar.GetComponent<HealthBar>().Damage(1);
             Destroy(gameObject);
         }
+    }
+
+    public void setHealthBar(GameObject health)
+    {
+        healthBar = health;
     }
 }
