@@ -248,7 +248,6 @@ MonoBehaviour:
   projectileCooldown: 1
   projectileTime: 0
   timeInvincible: 2
-  AudioSource: {fileID: 0}
 --- !u!95 &11604878
 Animator:
   serializedVersion: 3

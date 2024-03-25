@@ -21,7 +21,7 @@ public class WyattMoveLeg : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float horizontal;
     float vertical;
-    public AudioSource AudioSource;
+    AudioSource audioSource;
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -31,7 +31,7 @@ public class WyattMoveLeg : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -79,7 +79,7 @@ public class WyattMoveLeg : MonoBehaviour
     void Eat()
     {
         animator.Play("WyattEat");
-        AudioSource.Play();
+        audioSource.Play();
     }
 }
 
