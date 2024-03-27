@@ -5,9 +5,12 @@ using UnityEngine;
 public class EatingCollider : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public GameObject wyatt;
+    private WyattController wyattScript;
     void Start()
     {
-        
+        wyattScript = wyatt.GetComponent<WyattController>();
     }
 
     // Update is called once per frame
@@ -19,7 +22,6 @@ public class EatingCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MeleeVirus virus = collision.GetComponent<MeleeVirus>();
-        gam
     }
 
     private void OnTriggerExit(Collider other)

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WyattMoveLeg : MonoBehaviour
+public class WyattController : MonoBehaviour
 {
     public float speed = 3.0f;
 
@@ -19,15 +19,15 @@ public class WyattMoveLeg : MonoBehaviour
     float invincibleTimer;
 
     Rigidbody2D rigidbody2d;
-    float horizontal;
-    float vertical;
     AudioSource audioSource;
+
+    private List<PolygonCollider2D> eatableViruses = new List<PolygonCollider2D>(); 
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -35,11 +35,8 @@ public class WyattMoveLeg : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
-        vertical = Input.GetAxis("Vertical");
-        
-
         if (Input.GetKeyDown(KeyCode.C) && projectileCooldown == projectileTime)
         {
             Launch();
@@ -56,12 +53,7 @@ public class WyattMoveLeg : MonoBehaviour
 
     }
 
-    void FixedUpdate()
-    {
-        Vector2 position = rigidbody2d.position;
-        position.y = Mathf.Clamp(position.y + speed * vertical * Time.deltaTime, -3, 3);
-        rigidbody2d.MovePosition(position);
-
+    protected virtual void FixedUpdate() {
         projectileTime = Mathf.Clamp(projectileTime + Time.deltaTime, 0, projectileCooldown);
     }
 
@@ -80,6 +72,16 @@ public class WyattMoveLeg : MonoBehaviour
     { 
         animator.Play("WyattEat");
         audioSource.Play();
+    }
+
+    public void addToList(PolygonCollider2D pc)
+    {
+        eatableViruses.Add(pc);
+    }
+
+    public void removeFirstVirusFromList()
+    {
+        eatableViruses.RemoveAt(0);
     }
 }
 
