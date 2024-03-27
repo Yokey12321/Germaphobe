@@ -77,7 +77,7 @@ public class WyattMoveLeg : MonoBehaviour
     }
 
     void Eat()
-    {
+    { 
         animator.Play("WyattEat");
         audioSource.Play();
     }

@@ -19,9 +19,11 @@ public class EatingCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MeleeVirus virus = collision.GetComponent<MeleeVirus>();
-        if (virus != null)
-        {
-            Destroy(collision.gameObject);
-        }
+        gam
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        
     }
 }
