@@ -134,10 +134,9 @@ GameObject:
   - component: {fileID: 11604875}
   - component: {fileID: 11604874}
   - component: {fileID: 11604876}
-  - component: {fileID: 11604877}
   - component: {fileID: 11604878}
   - component: {fileID: 11604879}
-  - component: {fileID: 11604880}
+  - component: {fileID: 11604877}
   m_Layer: 0
   m_Name: wyatt
   m_TagString: Untagged
@@ -185,12 +184,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: d25453134ff740a47962f83c69a613ff, type: 3}
+  m_Sprite: {fileID: -7222494424747563225, guid: cb513d1f54063b74ea417069115b9052, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.96, y: 4.02}
+  m_Size: {x: 3.9400003, y: 4.131063}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -206,7 +205,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -7, y: 0, z: 0}
   m_LocalScale: {x: 0.5381, y: 0.4829, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1585526779}
   m_Father: {fileID: 1018432433}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 11604873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6f3503a2012f894db6acf6ea107e3ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 0d57a8b7e26aae146932720d8c1ed691, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
@@ -364,22 +364,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!58 &11604880
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11604873}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 2.01
 --- !u!1 &152090493
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,6 +545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mask: {fileID: 1529492474}
   bodyHealth: 10
+  triggerList: []
 --- !u!1 &387291732
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,6 +5877,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529492471}
   m_CullTransparentMesh: 1
+--- !u!1 &1585526778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1585526779}
+  - component: {fileID: 1585526780}
+  m_Layer: 0
+  m_Name: EatingCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1585526779
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585526778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 11604875}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &1585526780
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585526778}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.2778525, y: 1.5448442}
+      - {x: 0.90953255, y: 1.7406346}
+      - {x: 0.016778499, y: -0.067797154}
+      - {x: 0.6179936, y: -1.8952311}
+      - {x: 1.2436268, y: -1.5018028}
+      - {x: 1.3945291, y: -1.1728376}
+      - {x: 1.8471371, y: -0.69207466}
+      - {x: 1.872249, y: 0.6468506}
 --- !u!1 &1741345446
 GameObject:
   m_ObjectHideFlags: 0

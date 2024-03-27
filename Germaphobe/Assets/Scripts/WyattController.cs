@@ -18,10 +18,10 @@ public class WyattController : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
 
-    Rigidbody2D rigidbody2d;
+    protected Rigidbody2D rigidbody2d;
     AudioSource audioSource;
 
-    private List<PolygonCollider2D> eatableViruses = new List<PolygonCollider2D>(); 
+    private List<GameObject> eatableViruses = new List<GameObject>(); 
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
@@ -74,9 +74,9 @@ public class WyattController : MonoBehaviour
         audioSource.Play();
     }
 
-    public void addToList(PolygonCollider2D pc)
+    public void addToList(GameObject virus)
     {
-        eatableViruses.Add(pc);
+        eatableViruses.Add(virus);
     }
 
     public void removeFirstVirusFromList()
