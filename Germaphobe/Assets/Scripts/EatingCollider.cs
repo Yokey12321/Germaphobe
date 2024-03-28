@@ -22,10 +22,18 @@ public class EatingCollider : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         MeleeVirus virus = collision.GetComponent<MeleeVirus>();
+        if (virus != null)
+        {
+            wyattScript.addToList(collision.gameObject);
+        }
     }
 
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        
+        MeleeVirus virus = collision.GetComponent<MeleeVirus>();
+        if (virus != null)
+        {
+            wyattScript.removeFirstVirusFromList();
+        }
     }
 }

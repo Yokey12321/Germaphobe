@@ -5,7 +5,6 @@ using UnityEngine;
 public class WyattLeg : WyattController
 {
     float vertical;
-    private Rigidbody2D rigidbody2d;
 
     // Start is called before the first frame update
     new void Start()
