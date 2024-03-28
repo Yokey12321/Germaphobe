@@ -34,7 +34,7 @@ public class EnemySpawner : MonoBehaviour
         if (time > timeToNextSpawn)
         {
             time = 0;
-            timeToNextSpawn = UnityEngine.Random.Range(3, 5);
+            timeToNextSpawn = UnityEngine.Random.Range(5, 10);
             Spawn();
         }
     }

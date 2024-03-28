@@ -11,6 +11,9 @@ public class WyattController : MonoBehaviour
     public float projectileCooldown;
     [SerializeField]
     private float projectileTime = 0;
+
+    public ParticleSystem eatingParticles;
+
     public int health { get { return currentHealth; } }
     int currentHealth;
 
@@ -76,6 +79,7 @@ public class WyattController : MonoBehaviour
         if (eatableViruses.Count > 0)
         {
             Destroy(eatableViruses[0]);
+            eatingParticles.Play();
         }
     }
 
