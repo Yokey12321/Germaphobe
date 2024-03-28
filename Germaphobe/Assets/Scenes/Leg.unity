@@ -816,7 +816,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   virusPrefab: {fileID: 3904797773623498295, guid: 247c8454e21d51345a9d21a9bcc67e27, type: 3}
-  speed: 5
+  speed: 6.7
   enemiesParent: {fileID: 1741345446}
   healthBar: {fileID: 180547088}
 --- !u!1 &677808934
