@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 3824202723735002443}
   - component: {fileID: 1318092550507582304}
   - component: {fileID: 9098453252156187642}
-  - component: {fileID: 6493452798021926061}
   - component: {fileID: -4112094510552213979}
+  - component: {fileID: 2312639385952084538}
   m_Layer: 3
   m_Name: meleeVirus
   m_TagString: Untagged
@@ -99,69 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   healthBar: {fileID: 5786130321587631936, guid: e150fbf2ca69b3a4c9b58e35525af698, type: 3}
---- !u!60 &6493452798021926061
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3904797773623498295}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.86, y: 3.71}
-    newSize: {x: 2.78, y: 1.92}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.71, y: -0.81}
-      - {x: 0.85999995, y: -0.74}
-      - {x: 0.95, y: -0.68}
-      - {x: 1.13, y: -0.48999998}
-      - {x: 1.22, y: -0.38}
-      - {x: 1.36, y: -0.11}
-      - {x: 1.38, y: -0.01}
-      - {x: 1.39, y: 0.02}
-      - {x: 1.39, y: 0.35}
-      - {x: 1.38, y: 0.42}
-      - {x: 1.3, y: 0.56}
-      - {x: 1.12, y: 0.72999996}
-      - {x: 1.02, y: 0.77}
-      - {x: 0.84999996, y: 0.84}
-      - {x: 0.59999996, y: 0.87}
-      - {x: 0.47, y: 0.88}
-      - {x: 0.11, y: 0.88}
-      - {x: -0.26, y: 0.84999996}
-      - {x: -0.47, y: 0.79999995}
-      - {x: -0.71, y: 0.71}
-      - {x: -0.90999997, y: 0.59999996}
-      - {x: -1.09, y: 0.45999998}
-      - {x: -1.26, y: 0.29999998}
-      - {x: -1.3199999, y: 0.22999999}
-      - {x: -1.37, y: 0.14}
-      - {x: -1.39, y: 0.06}
-      - {x: -1.39, y: -0.37}
-      - {x: -1.38, y: -0.41}
-      - {x: -1.36, y: -0.51}
-      - {x: -1.26, y: -0.66999996}
-      - {x: -1.13, y: -0.78999996}
-      - {x: -1.0799999, y: -0.83}
-      - {x: -0.90999997, y: -0.91999996}
-      - {x: -0.72999996, y: -0.95}
-      - {x: -0.64, y: -0.96}
-      - {x: 0.089999996, y: -0.96}
-      - {x: 0.17999999, y: -0.95}
-      - {x: 0.52, y: -0.89}
 --- !u!82 &-4112094510552213979
 AudioSource:
   m_ObjectHideFlags: 0
@@ -258,3 +195,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &2312639385952084538
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904797773623498295}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.7

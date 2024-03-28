@@ -1,0 +1,2148 @@
+fileFormatVersion: 2
+guid: a0245223873fec248a7bc4e2f0057397
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1969012761429440656
+    second: meleeminionpieces_0
+  - first:
+      213: -3422850760987148438
+    second: meleeminionpieces_1
+  - first:
+      213: -5150079443762499928
+    second: meleeminionpieces_2
+  - first:
+      213: -4684077816522262931
+    second: meleeminionpieces_3
+  - first:
+      213: 8795142490192118306
+    second: meleeminionpieces_4
+  - first:
+      213: -2864141972158960256
+    second: meleeminionpieces_5
+  - first:
+      213: -2202187837280920058
+    second: meleeminionpieces_6
+  - first:
+      213: -6400132318385330025
+    second: meleeminionpieces_7
+  - first:
+      213: -2866323875470145033
+    second: meleeminionpieces_8
+  - first:
+      213: 446325585926274693
+    second: meleeminionpieces_9
+  - first:
+      213: 4165823210819803384
+    second: meleeminionpieces_10
+  - first:
+      213: -1778737318901891514
+    second: meleeminionpieces_11
+  - first:
+      213: -4348446103613903516
+    second: meleeminionpieces_12
+  - first:
+      213: -4509208463712665028
+    second: meleeminionpieces_13
+  - first:
+      213: -5115148196429229124
+    second: meleeminionpieces_14
+  - first:
+      213: 664295384419043434
+    second: meleeminionpieces_15
+  - first:
+      213: -4353867768273605693
+    second: meleeminionpieces_16
+  - first:
+      213: 3627270447651881340
+    second: meleeminionpieces_17
+  - first:
+      213: -6090213897490819298
+    second: meleeminionpieces_18
+  - first:
+      213: 6220698281900159119
+    second: meleeminionpieces_19
+  - first:
+      213: 1419599335719614500
+    second: meleeminionpieces_20
+  - first:
+      213: -8191853821303219033
+    second: meleeminionpieces_21
+  - first:
+      213: 239292904320372092
+    second: meleeminionpieces_22
+  - first:
+      213: -6488302602003538478
+    second: meleeminionpieces_23
+  - first:
+      213: 7823341735185555352
+    second: meleeminionpieces_24
+  - first:
+      213: -3015819000972991853
+    second: meleeminionpieces_25
+  - first:
+      213: -7778299301338710868
+    second: meleeminionpieces_26
+  - first:
+      213: 6029232852040262957
+    second: meleeminionpieces_27
+  - first:
+      213: -3466069031419985645
+    second: meleeminionpieces_28
+  - first:
+      213: -2177443448302251219
+    second: meleeminionpieces_29
+  - first:
+      213: -2553970077641062007
+    second: meleeminionpieces_30
+  - first:
+      213: 7449003893472797686
+    second: meleeminionpieces_31
+  - first:
+      213: -8495753077221682332
+    second: meleeminionpieces_32
+  - first:
+      213: 700477515266608536
+    second: meleeminionpieces_33
+  - first:
+      213: 8433549832402051590
+    second: meleeminionpieces_34
+  - first:
+      213: 6847118613756444735
+    second: meleeminionpieces_35
+  - first:
+      213: 2485157536641735302
+    second: meleeminionpieces_36
+  - first:
+      213: -2147467531722857009
+    second: meleeminionpieces_37
+  - first:
+      213: -310678741459387514
+    second: meleeminionpieces_38
+  - first:
+      213: 4276994228372927363
+    second: meleeminionpieces_39
+  - first:
+      213: -1024607287449828600
+    second: meleeminionpieces_40
+  - first:
+      213: -4209447045732185959
+    second: meleeminionpieces_41
+  - first:
+      213: -5727869428543013627
+    second: meleeminionpieces_42
+  - first:
+      213: -518069808299199702
+    second: meleeminionpieces_43
+  - first:
+      213: 4550688943876064260
+    second: meleeminionpieces_44
+  - first:
+      213: 2199278375388703384
+    second: meleeminionpieces_45
+  - first:
+      213: 2327690850660341306
+    second: meleeminionpieces_46
+  - first:
+      213: 632702563448231347
+    second: meleeminionpieces_47
+  - first:
+      213: 4023631238878776226
+    second: meleeminionpieces_48
+  - first:
+      213: 834428765547556766
+    second: meleeminionpieces_49
+  - first:
+      213: 6943174518067262315
+    second: meleeminionpieces_50
+  - first:
+      213: 3168833796894645574
+    second: meleeminionpieces_51
+  - first:
+      213: -5462113753223166331
+    second: meleeminionpieces_52
+  - first:
+      213: 3560293997193846551
+    second: meleeminionpieces_53
+  - first:
+      213: -8802334798294179840
+    second: meleeminionpieces_54
+  - first:
+      213: -1935381942941790393
+    second: meleeminionpieces_55
+  - first:
+      213: -638155109577700933
+    second: meleeminionpieces_56
+  - first:
+      213: -5693096363247083895
+    second: meleeminionpieces_57
+  - first:
+      213: 4846693990230715745
+    second: meleeminionpieces_58
+  - first:
+      213: -4641342708974190137
+    second: meleeminionpieces_59
+  - first:
+      213: -4808474557815987490
+    second: meleeminionpieces_60
+  - first:
+      213: -1224762708263636190
+    second: meleeminionpieces_61
+  - first:
+      213: 1986442485490827657
+    second: meleeminionpieces_62
+  - first:
+      213: 2812017721499970213
+    second: meleeminionpieces_63
+  - first:
+      213: -6924594101094993048
+    second: meleeminionpieces_64
+  - first:
+      213: -3018789405111629152
+    second: meleeminionpieces_65
+  - first:
+      213: 1441032311908658614
+    second: meleeminionpieces_66
+  - first:
+      213: -7465038774042765129
+    second: meleeminionpieces_67
+  - first:
+      213: -1460633867456393762
+    second: meleeminionpieces_68
+  - first:
+      213: -5086023282634393566
+    second: meleeminionpieces_69
+  - first:
+      213: 8083680292132978452
+    second: meleeminionpieces_70
+  - first:
+      213: -2319724998864003872
+    second: meleeminionpieces_71
+  - first:
+      213: 8589355738551202904
+    second: meleeminionpieces_72
+  - first:
+      213: 2423532298310253649
+    second: meleeminionpieces_73
+  - first:
+      213: 2839886405063820865
+    second: meleeminionpieces_74
+  - first:
+      213: 4034375099002507307
+    second: meleeminionpieces_75
+  - first:
+      213: -2065547527967829647
+    second: meleeminionpieces_76
+  - first:
+      213: -7004424209858237544
+    second: meleeminionpieces_77
+  - first:
+      213: -2807720329157398800
+    second: meleeminionpieces_78
+  - first:
+      213: 1152846906342249257
+    second: meleeminionpieces_79
+  - first:
+      213: 8002197838035079669
+    second: meleeminionpieces_80
+  - first:
+      213: -7432006523151657857
+    second: meleeminionpieces_81
+  - first:
+      213: -9051289990649043506
+    second: meleeminionpieces_82
+  - first:
+      213: 6612455700048861476
+    second: meleeminionpieces_83
+  - first:
+      213: -4901898263221320625
+    second: meleeminionpieces_84
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: meleeminionpieces_0
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 333.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098763b9ca6535b10800000000000000
+      internalID: 1969012761429440656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 333.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f7f203e579f70d0800000000000000
+      internalID: -3422850760987148438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 333.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aeae7d380e3788b0800000000000000
+      internalID: -5150079443762499928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_3
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 333.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6637ed0b00defeb0800000000000000
+      internalID: -4684077816522262931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_4
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22288d40f7f9e0a70800000000000000
+      internalID: 8795142490192118306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_5
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08dad2b1d068048d0800000000000000
+      internalID: -2864141972158960256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_6
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e5f2664d14071e0800000000000000
+      internalID: -2202187837280920058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_7
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7982527d0992e27a0800000000000000
+      internalID: -6400132318385330025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f981672f95c838d0800000000000000
+      internalID: -2866323875470145033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_9
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ebd4371caa13600800000000000000
+      internalID: 446325585926274693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_10
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f8ddf5832affc930800000000000000
+      internalID: 4165823210819803384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_11
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 296.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e3f1625d7a057e0800000000000000
+      internalID: -1778737318901891514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d692dce4737a3c0800000000000000
+      internalID: -4348446103613903516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32c8360bc21c61c0800000000000000
+      internalID: -4509208463712665028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_14
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb31b5a01d75309b0800000000000000
+      internalID: -5115148196429229124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_15
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a688a3ee12d083900800000000000000
+      internalID: 664295384419043434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_16
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cb67012554f393c0800000000000000
+      internalID: -4353867768273605693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_17
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7100980147a65230800000000000000
+      internalID: 3627270447651881340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_18
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1799e14ab63b7ba0800000000000000
+      internalID: -6090213897490819298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_19
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80ba83f02c545650800000000000000
+      internalID: 6220698281900159119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_20
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428b2f0131e63b310800000000000000
+      internalID: 1419599335719614500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_21
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 259.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac9b411a50b05e80800000000000000
+      internalID: -8191853821303219033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d894fe0a3225300800000000000000
+      internalID: 239292904320372092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_23
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd1654f82be4f5a0800000000000000
+      internalID: -6488302602003538478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_24
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f193abbd7129c60800000000000000
+      internalID: 7823341735185555352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_25
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392a12cd898a526d0800000000000000
+      internalID: -3015819000972991853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_26
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac79032ffded0490800000000000000
+      internalID: -7778299301338710868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_27
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d25a9fda5532ca350800000000000000
+      internalID: 6029232852040262957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_28
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 311ca37749c06efc0800000000000000
+      internalID: -3466069031419985645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_29
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d23517968ba28c1e0800000000000000
+      internalID: -2177443448302251219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_30
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9894a33feb97e8cd0800000000000000
+      internalID: -2553970077641062007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_31
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 222.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3a2f8139d206760800000000000000
+      internalID: 7449003893472797686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46315c4b695091a80800000000000000
+      internalID: -8495753077221682332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_33
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d4d9eb69898b900800000000000000
+      internalID: 700477515266608536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_34
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60221e3c3ecf90570800000000000000
+      internalID: 8433549832402051590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f300be30a1ad50f50800000000000000
+      internalID: 6847118613756444735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_36
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a5a66dc9d0d7220800000000000000
+      internalID: 2485157536641735302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_37
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc569fc58a9a232e0800000000000000
+      internalID: -2147467531722857009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_38
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b3c08a45f30bbf0800000000000000
+      internalID: -310678741459387514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_39
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3837098179fea5b30800000000000000
+      internalID: 4276994228372927363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_40
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803c645c91dd7c1f0800000000000000
+      internalID: -1024607287449828600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_41
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 185.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998c05ae63a0595c0800000000000000
+      internalID: -4209447045732185959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dbfdf2a158280b0800000000000000
+      internalID: -5727869428543013627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_43
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23b87311427fc8f0800000000000000
+      internalID: -518069808299199702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_44
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 404c70fdb7b472f30800000000000000
+      internalID: 4550688943876064260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_45
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89aed37b708658e10800000000000000
+      internalID: 2199278375388703384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_46
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36598cfe7e9d4020800000000000000
+      internalID: 2327690850660341306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_47
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b59fc611afc7c800800000000000000
+      internalID: 632702563448231347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_48
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abc88c2b4fc6d730800000000000000
+      internalID: 4023631238878776226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_49
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9f64d09a8c749b00800000000000000
+      internalID: 834428765547556766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_50
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6371fa007c1b5060800000000000000
+      internalID: 6943174518067262315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_51
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 148.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d58209c85f9fb20800000000000000
+      internalID: 3168833796894645574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_52
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5868b502b7ca234b0800000000000000
+      internalID: -5462113753223166331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_53
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fd1b6f684b86130800000000000000
+      internalID: 3560293997193846551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_54
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000ad914323d7d580800000000000000
+      internalID: -8802334798294179840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_55
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74fcf3280642425e0800000000000000
+      internalID: -1935381942941790393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_56
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb945061f41d427f0800000000000000
+      internalID: -638155109577700933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_57
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ed69c550f0ef0b0800000000000000
+      internalID: -5693096363247083895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_58
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16de8b6518ae24340800000000000000
+      internalID: 4846693990230715745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_59
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c18eb6a563a69fb0800000000000000
+      internalID: -4641342708974190137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_60
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 111.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed2efd5bdddd44db0800000000000000
+      internalID: -4808474557815987490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223fccf4ec4c00fe0800000000000000
+      internalID: -1224762708263636190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_62
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981cc6a7ae2419b10800000000000000
+      internalID: 1986442485490827657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_63
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaeb10183b460720800000000000000
+      internalID: 2812017721499970213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_64
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863b7766a56e6ef90800000000000000
+      internalID: -6924594101094993048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_65
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aacb90c70b1b16d0800000000000000
+      internalID: -3018789405111629152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_66
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bdec25b0439ff310800000000000000
+      internalID: 1441032311908658614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_67
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b8d9a659cad66890800000000000000
+      internalID: -7465038774042765129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_68
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edd4b5f7c39cabbe0800000000000000
+      internalID: -1460633867456393762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_69
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 228f53775c0da69b0800000000000000
+      internalID: -5086023282634393566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_70
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 74.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41f796285600f2070800000000000000
+      internalID: 8083680292132978452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_71
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ec1e1a676eaecfd0800000000000000
+      internalID: -2319724998864003872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_72
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 854becd2985833770800000000000000
+      internalID: 8589355738551202904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_73
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15cf77ee8cd12a120800000000000000
+      internalID: 2423532298310253649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_74
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1464a4893ad496720800000000000000
+      internalID: 2839886405063820865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_75
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b20d9ba07cafcf730800000000000000
+      internalID: 4034375099002507307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_76
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1719ac09773b553e0800000000000000
+      internalID: -2065547527967829647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_77
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89be04bca494bce90800000000000000
+      internalID: -7004424209858237544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_78
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe2eef8c39f809d0800000000000000
+      internalID: -2807720329157398800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_79
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 37.9
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92310fc372cbfff00800000000000000
+      internalID: 1152846906342249257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_80
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0.9000015
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1da7649848d0f60800000000000000
+      internalID: 8002197838035079669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_81
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0.9000015
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f74d82391753cd890800000000000000
+      internalID: -7432006523151657857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_82
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 0.9000015
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5a05495bb536280800000000000000
+      internalID: -9051289990649043506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_83
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 0.9000015
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4295b66cc6924cb50800000000000000
+      internalID: 6612455700048861476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: meleeminionpieces_84
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0.9000015
+        width: 38.6
+        height: 37.1
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f44c69f3085f8fbb0800000000000000
+      internalID: -4901898263221320625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

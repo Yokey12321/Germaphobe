@@ -72,6 +72,11 @@ public class WyattController : MonoBehaviour
     { 
         animator.Play("WyattEat");
         audioSource.Play();
+        Debug.Log(eatableViruses.Count);
+        if (eatableViruses.Count > 0)
+        {
+            Destroy(eatableViruses[0]);
+        }
     }
 
     public void addToList(GameObject virus)
