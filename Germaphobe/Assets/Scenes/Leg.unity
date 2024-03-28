@@ -137,6 +137,7 @@ GameObject:
   - component: {fileID: 11604878}
   - component: {fileID: 11604879}
   - component: {fileID: 11604877}
+  - component: {fileID: 11604880}
   m_Layer: 0
   m_Name: wyatt
   m_TagString: Untagged
@@ -248,8 +249,13 @@ MonoBehaviour:
   projectilePrefab: {fileID: 589406608771338133, guid: aa41447443d336b4c9927f80b0b20be9, type: 3}
   projectileContainerPrefab: {fileID: 706328020}
   projectileCooldown: 1
+<<<<<<< Updated upstream
   projectileTime: 0
   eatingParticles: {fileID: 2092055568}
+=======
+  spriteRenderer: {fileID: 11604874}
+  maxHealth: 5
+>>>>>>> Stashed changes
   timeInvincible: 2
 --- !u!95 &11604878
 Animator:
@@ -366,6 +372,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &11604880
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11604873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0746617}
+  serializedVersion: 2
+  m_Radius: 1.6903173
 --- !u!1 &152090493
 GameObject:
   m_ObjectHideFlags: 0

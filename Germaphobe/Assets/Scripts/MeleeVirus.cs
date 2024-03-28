@@ -16,6 +16,7 @@ public class MeleeVirus : MonoBehaviour
         {
             healthBar.GetComponent<HealthBar>().Damage(1);
             Destroy(gameObject);
+            
         }
     }
 

@@ -10,10 +10,16 @@ public class WyattController : MonoBehaviour
     public GameObject projectileContainerPrefab;
     public float projectileCooldown;
     [SerializeField]
+    private SpriteRenderer spriteRenderer;
+    private bool isFlickering = false;
     private float projectileTime = 0;
+<<<<<<< Updated upstream
 
     public ParticleSystem eatingParticles;
 
+=======
+    public int maxHealth = 5;
+>>>>>>> Stashed changes
     public int health { get { return currentHealth; } }
     int currentHealth;
 
@@ -35,6 +41,7 @@ public class WyattController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+        currentHealth = maxHealth;
     }
 
     // Update is called once per frame
@@ -54,6 +61,8 @@ public class WyattController : MonoBehaviour
             Eat();
         }
 
+       
+
     }
 
     protected virtual void FixedUpdate() {
@@ -69,6 +78,16 @@ public class WyattController : MonoBehaviour
         projectile.transform.parent = projectileContainerPrefab.transform;
         projectile.GetComponent<Renderer>().sortingOrder = 100;
         //animator.SetTrigger("Launch");
+    }
+
+    public void ChangeHealth(int amount)
+    {
+        if(amount < 0)
+        {
+            isFlickering = true;
+        }
+        currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log(currentHealth + "/" + maxHealth);
     }
 
     void Eat()
@@ -92,5 +111,41 @@ public class WyattController : MonoBehaviour
     {
         eatableViruses.RemoveAt(0);
     }
+
+    IEnumerator damageFlickerRoutine()
+    {
+        while(isFlickering == true)
+        {
+            WaitForSeconds wait = new WaitForSeconds(0.1f);
+            spriteRenderer.color = Color.red;
+            yield return wait;
+            spriteRenderer.color = Color.white;
+            yield return wait;
+            spriteRenderer.color = Color.red;
+            yield return wait;
+            spriteRenderer.color = Color.white;
+            yield return wait;
+            spriteRenderer.color = Color.red;
+            yield return wait;
+            spriteRenderer.color = Color.white;
+            yield return wait;
+            spriteRenderer.color = Color.red;
+            yield return wait;
+            spriteRenderer.color = Color.white;
+            yield return wait;
+            isFlickering = false;  
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.gameObject.GetComponent<EatingCollider>() && collision.gameObject.GetComponent<MeleeVirus>() != null)
+        {
+            ChangeHealth(-1);
+            Debug.Log("Player collided with virus");
+            StartCoroutine(damageFlickerRoutine());
+        }
+    }
+
 }
 

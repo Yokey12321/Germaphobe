@@ -99,6 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   healthBar: {fileID: 5786130321587631936, guid: e150fbf2ca69b3a4c9b58e35525af698, type: 3}
+  Wyatt: {fileID: 0}
 --- !u!82 &-4112094510552213979
 AudioSource:
   m_ObjectHideFlags: 0
