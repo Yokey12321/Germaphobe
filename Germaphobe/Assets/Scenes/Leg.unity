@@ -134,9 +134,10 @@ GameObject:
   - component: {fileID: 11604875}
   - component: {fileID: 11604874}
   - component: {fileID: 11604876}
+  - component: {fileID: 11604877}
   - component: {fileID: 11604878}
   - component: {fileID: 11604879}
-  - component: {fileID: 11604877}
+  - component: {fileID: 11604880}
   m_Layer: 0
   m_Name: wyatt
   m_TagString: Untagged
@@ -189,7 +190,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 3.9400003, y: 4.131063}
+  m_Size: {x: 3.96, y: 4.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -208,6 +209,7 @@ Transform:
   m_Children:
   - {fileID: 1585526779}
   - {fileID: 2092055566}
+  m_Children: []
   m_Father: {fileID: 1018432433}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -241,7 +243,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 11604873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d57a8b7e26aae146932720d8c1ed691, type: 3}
+  m_Script: {fileID: 11500000, guid: d6f3503a2012f894db6acf6ea107e3ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
@@ -365,6 +367,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &11604880
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11604873}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 2.01
 --- !u!1 &152090493
 GameObject:
   m_ObjectHideFlags: 0
