@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9098453252156187642}
   - component: {fileID: -4112094510552213979}
   - component: {fileID: 2312639385952084538}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: meleeVirus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   healthBar: {fileID: 5786130321587631936, guid: e150fbf2ca69b3a4c9b58e35525af698, type: 3}
-  Wyatt: {fileID: 0}
 --- !u!82 &-4112094510552213979
 AudioSource:
   m_ObjectHideFlags: 0
@@ -206,7 +205,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class EnemyProjectile : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
 
@@ -32,15 +32,4 @@ public class Projectile : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    /*void OnCollisionEnter2D(Collision2D other)
-    {
-        EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e != null)
-        {
-            e.Fix();
-        }
-
-        Destroy(gameObject);
-    }*/
 }

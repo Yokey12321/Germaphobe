@@ -249,9 +249,8 @@ MonoBehaviour:
   projectilePrefab: {fileID: 589406608771338133, guid: aa41447443d336b4c9927f80b0b20be9, type: 3}
   projectileContainerPrefab: {fileID: 706328020}
   projectileCooldown: 1
-  projectileTime: 0
+  spriteRenderer: {fileID: 0}
   eatingParticles: {fileID: 2092055568}
-  spriteRenderer: {fileID: 11604874}
   maxHealth: 5
   timeInvincible: 2
 --- !u!95 &11604878
@@ -834,10 +833,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bba667929c6b34695daf9cc050b95e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virusPrefab: {fileID: 3904797773623498295, guid: 247c8454e21d51345a9d21a9bcc67e27, type: 3}
+  meleeVirusPrefab: {fileID: 3904797773623498295, guid: 247c8454e21d51345a9d21a9bcc67e27, type: 3}
+  rangedVirusPrefab: {fileID: 4044081505205973088, guid: 15a1effdba71c5a4696d2245c54cd273, type: 3}
   speed: 6.7
   enemiesParent: {fileID: 1741345446}
   healthBar: {fileID: 180547088}
+  wyatt: {fileID: 11604873}
+  projectileContainerPrefab: {fileID: 706328020}
 --- !u!1 &677808934
 GameObject:
   m_ObjectHideFlags: 0

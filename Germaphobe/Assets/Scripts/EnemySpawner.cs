@@ -7,11 +7,14 @@ public class EnemySpawner : MonoBehaviour
 
     private int timeToNextSpawn = 0;
     private int time;
-    public GameObject virusPrefab;
+    public GameObject meleeVirusPrefab;
+    public GameObject rangedVirusPrefab;
     public float speed;
     private int direction = 1;
     public GameObject enemiesParent;
     public GameObject healthBar;
+    public GameObject wyatt;
+    public GameObject projectileContainerPrefab;
 
     void Start()
     {
@@ -41,11 +44,21 @@ public class EnemySpawner : MonoBehaviour
     
     void Spawn()
     {
-        GameObject virus = Instantiate(virusPrefab, transform);
+        GameObject virus;
+        if (UnityEngine.Random.Range(0f, 1f) > 0.5f)
+        {
+            virus = Instantiate(meleeVirusPrefab, transform);
+            virus.GetComponent<MeleeVirus>().setHealthBar(healthBar);
+        } else
+        {
+            virus = Instantiate(rangedVirusPrefab, transform);
+            virus.GetComponent<RangedVirus>().SetWyatt(wyatt);
+            virus.GetComponent<RangedVirus>().setProjectilePrefab(projectileContainerPrefab);
+            virus.GetComponent<RangedVirus>().setStoppingX(UnityEngine.Random.Range(4f, 7f));
+        }
         virus.transform.position = new Vector3(10, transform.position.y, 0);
         virus.transform.parent = enemiesParent.transform;
         virus.layer = LayerMask.GetMask("Hittable");
-        virus.GetComponent<MeleeVirus>().setHealthBar(healthBar);
     }
 
 
