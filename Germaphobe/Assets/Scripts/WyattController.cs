@@ -89,6 +89,8 @@ public class WyattController : MonoBehaviour
         {
             isFlickering = true;
 
+            StartCoroutine(damageFlickerRoutine());
+
             if (isInvincible)
                 return;
 
@@ -150,9 +152,7 @@ public class WyattController : MonoBehaviour
     {
         if (!collision.gameObject.GetComponent<EatingCollider>() && collision.gameObject.GetComponent<MeleeVirus>() != null)
         {
-            ChangeHealth(-1);
-            Debug.Log("Player collided with virus");
-            StartCoroutine(damageFlickerRoutine());
+            
         }
     }
 
