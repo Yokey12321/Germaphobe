@@ -249,13 +249,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 589406608771338133, guid: aa41447443d336b4c9927f80b0b20be9, type: 3}
   projectileContainerPrefab: {fileID: 706328020}
   projectileCooldown: 1
-<<<<<<< Updated upstream
   projectileTime: 0
   eatingParticles: {fileID: 2092055568}
-=======
   spriteRenderer: {fileID: 11604874}
   maxHealth: 5
->>>>>>> Stashed changes
   timeInvincible: 2
 --- !u!95 &11604878
 Animator:

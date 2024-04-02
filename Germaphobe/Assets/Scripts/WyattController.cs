@@ -13,13 +13,10 @@ public class WyattController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isFlickering = false;
     private float projectileTime = 0;
-<<<<<<< Updated upstream
 
     public ParticleSystem eatingParticles;
 
-=======
     public int maxHealth = 5;
->>>>>>> Stashed changes
     public int health { get { return currentHealth; } }
     int currentHealth;
 
