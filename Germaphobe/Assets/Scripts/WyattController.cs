@@ -59,7 +59,12 @@ public class WyattController : MonoBehaviour
             Eat();
         }
 
-       
+        if (isInvincible)
+        {
+            invincibleTimer -= Time.deltaTime;
+            if (invincibleTimer < 0)
+                isInvincible = false;
+        }   
 
     }
 
@@ -83,6 +88,12 @@ public class WyattController : MonoBehaviour
         if(amount < 0)
         {
             isFlickering = true;
+
+            if (isInvincible)
+                return;
+
+            isInvincible = true;
+            invincibleTimer = timeInvincible;
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
@@ -115,19 +126,19 @@ public class WyattController : MonoBehaviour
         while(isFlickering == true)
         {
             WaitForSeconds wait = new WaitForSeconds(0.1f);
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color32(255, 100, 100, 255);
             yield return wait;
             spriteRenderer.color = Color.white;
             yield return wait;
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color32(255, 100, 100, 255);
             yield return wait;
             spriteRenderer.color = Color.white;
             yield return wait;
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color32(255, 100, 100, 255);
             yield return wait;
             spriteRenderer.color = Color.white;
             yield return wait;
-            spriteRenderer.color = Color.red;
+            spriteRenderer.color = new Color32(255, 100, 100, 255);
             yield return wait;
             spriteRenderer.color = Color.white;
             yield return wait;
