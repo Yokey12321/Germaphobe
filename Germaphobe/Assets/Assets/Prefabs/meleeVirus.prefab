@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9098453252156187642}
   - component: {fileID: -4112094510552213979}
   - component: {fileID: 2312639385952084538}
+  - component: {fileID: 6521460748705274864}
   m_Layer: 3
   m_Name: meleeVirus
   m_TagString: Untagged
@@ -99,7 +100,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   healthBar: {fileID: 5786130321587631936, guid: e150fbf2ca69b3a4c9b58e35525af698, type: 3}
-  Wyatt: {fileID: 0}
 --- !u!82 &-4112094510552213979
 AudioSource:
   m_ObjectHideFlags: 0
@@ -212,3 +212,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.7
+--- !u!95 &6521460748705274864
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3904797773623498295}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dbbdb115757124f4e9afdc96439cebc1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
