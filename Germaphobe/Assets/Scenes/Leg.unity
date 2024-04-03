@@ -5890,11 +5890,8 @@ Transform:
   m_Father: {fileID: 1018432433}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
-<<<<<<< Updated upstream
 --- !u!1 &1339949442
-=======
 --- !u!1 &1195764853
->>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5902,41 +5899,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream
   - component: {fileID: 1339949443}
   - component: {fileID: 1339949446}
   - component: {fileID: 1339949445}
   - component: {fileID: 1339949444}
   m_Layer: 5
   m_Name: Image
-=======
   - component: {fileID: 1195764856}
   - component: {fileID: 1195764855}
   - component: {fileID: 1195764854}
   m_Layer: 0
   m_Name: ranged_minion_idle_0
->>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream
 --- !u!224 &1339949443
 RectTransform:
-=======
 --- !u!95 &1195764854
 Animator:
   serializedVersion: 3
->>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream
   m_GameObject: {fileID: 1339949442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1946643692}
@@ -5999,10 +5988,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1339949442}
   m_CullTransparentMesh: 1
-=======
   m_GameObject: {fileID: 1195764853}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 1840826989a1ae94bad131035fe3192b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
@@ -6077,10 +6064,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes
 --- !u!1 &1529492471
 GameObject:
-  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
