@@ -89,6 +89,8 @@ public class WyattController : MonoBehaviour
         {
             isFlickering = true;
 
+            StartCoroutine(damageFlickerRoutine());
+
             if (isInvincible)
                 return;
 
@@ -147,6 +149,13 @@ public class WyattController : MonoBehaviour
     }
 
     
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!collision.gameObject.GetComponent<EatingCollider>() && collision.gameObject.GetComponent<MeleeVirus>() != null)
+        {
+            
+        }
+    }
 
 }
 

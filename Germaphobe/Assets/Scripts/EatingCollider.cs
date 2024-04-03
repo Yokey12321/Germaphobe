@@ -32,9 +32,13 @@ public class EatingCollider : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         MeleeVirus virus = collision.GetComponent<MeleeVirus>();
+        WyattController Weeyat = wyatt.GetComponent<WyattController>();    
         if (virus != null)
         {
             wyattScript.removeFirstVirusFromList();
+
+            Weeyat.ChangeHealth(-1);
+            Debug.Log("Player collided with virus");
         }
     }
 }
