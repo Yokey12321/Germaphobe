@@ -18,17 +18,17 @@ public class EnemyProjectile : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.magnitude > 1000.0f)
+        if (transform.position.magnitude > 100.0f)
         {
             Destroy(gameObject);
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.GetComponent<WyattController>() != null)
+    private void OnTriggerEnter2D(Collider2D collision)
+    {;
+        if (collision.gameObject.GetComponent<WyattCollider>() != null)
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.transform.parent.gameObject.GetComponent<WyattController>().ChangeHealth(-1);
             Destroy(gameObject);
         }
     }

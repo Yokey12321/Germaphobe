@@ -58,7 +58,7 @@ public class EnemySpawner : MonoBehaviour
         }
         virus.transform.position = new Vector3(10, transform.position.y, 0);
         virus.transform.parent = enemiesParent.transform;
-        virus.layer = LayerMask.GetMask("Hittable");
+        virus.layer = LayerMask.NameToLayer("Enemies");
     }
 
 

@@ -21,7 +21,6 @@ public class EatingCollider : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("hi");
         MeleeVirus virus = collision.GetComponent<MeleeVirus>();
         if (virus != null)
         {
