@@ -137,7 +137,6 @@ GameObject:
   - component: {fileID: 11604878}
   - component: {fileID: 11604879}
   - component: {fileID: 11604877}
-  - component: {fileID: 11604880}
   m_Layer: 0
   m_Name: wyatt
   m_TagString: Untagged
@@ -209,6 +208,7 @@ Transform:
   m_Children:
   - {fileID: 1585526779}
   - {fileID: 2092055566}
+  - {fileID: 898676024}
   m_Father: {fileID: 1018432433}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -368,56 +368,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!60 &11604880
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 11604873}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.9400003, y: 4.131063}
-    newSize: {x: 3.96, y: 4.01}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.17589915, y: -2.0028331}
-      - {x: -0.48511037, y: -2.0220332}
-      - {x: -0.7823613, y: -1.7208391}
-      - {x: -1.0001087, y: -1.6443479}
-      - {x: -1.1632435, y: -1.594005}
-      - {x: -1.3345814, y: -1.4811188}
-      - {x: -1.3773668, y: -1.0989575}
-      - {x: -1.8930161, y: -0.34256983}
-      - {x: -1.9612843, y: -0.0008570552}
-      - {x: -1.7967848, y: 0.21023044}
-      - {x: -1.8578122, y: 0.8154681}
-      - {x: -1.4036402, y: 1.2045424}
-      - {x: -1.0373518, y: 1.7752777}
-      - {x: -0.46978706, y: 1.827641}
-      - {x: -0.041506484, y: 2.005793}
-      - {x: 0.3113867, y: 1.9891214}
-      - {x: 0.66506237, y: 1.6905582}
-      - {x: 0.8785473, y: 1.781934}
-      - {x: -0.2235731, y: 0.06207203}
-      - {x: -0.10437173, y: -0.33978438}
-      - {x: 0.23859571, y: -1.0109726}
-      - {x: 0.40454495, y: -1.4353693}
-      - {x: 0.5273007, y: -1.9479516}
-      - {x: 0.49815163, y: -1.9732745}
-      - {x: 0.24822688, y: -1.9650385}
 --- !u!1 &152090493
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +954,101 @@ Transform:
   m_Father: {fileID: 1018432433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &898676023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 898676024}
+  - component: {fileID: 898676026}
+  - component: {fileID: 898676025}
+  m_Layer: 0
+  m_Name: WyattCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &898676024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898676023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 11604875}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!60 &898676025
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898676023}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.9400003, y: 4.131063}
+    newSize: {x: 3.96, y: 4.01}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.17589915, y: -2.0028331}
+      - {x: -0.48511037, y: -2.0220332}
+      - {x: -0.7823613, y: -1.7208391}
+      - {x: -1.0001087, y: -1.6443479}
+      - {x: -1.1632435, y: -1.594005}
+      - {x: -1.3345814, y: -1.4811188}
+      - {x: -1.3773668, y: -1.0989575}
+      - {x: -1.8930161, y: -0.34256983}
+      - {x: -1.9612843, y: -0.0008570552}
+      - {x: -1.7967848, y: 0.21023044}
+      - {x: -1.8578122, y: 0.8154681}
+      - {x: -1.4036402, y: 1.2045424}
+      - {x: -1.0373518, y: 1.7752777}
+      - {x: -0.46978706, y: 1.827641}
+      - {x: -0.041506484, y: 2.005793}
+      - {x: 0.3113867, y: 1.9891214}
+      - {x: 0.66506237, y: 1.6905582}
+      - {x: 0.8785473, y: 1.781934}
+      - {x: -0.2235731, y: 0.06207203}
+      - {x: -0.10437173, y: -0.33978438}
+      - {x: 0.23859571, y: -1.0109726}
+      - {x: 0.40454495, y: -1.4353693}
+      - {x: 0.5273007, y: -1.9479516}
+      - {x: 0.49815163, y: -1.9732745}
+      - {x: 0.24822688, y: -1.9650385}
+--- !u!114 &898676026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898676023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7dee8a7fd3927b42bf0cb46137ddab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wyatt: {fileID: 11604873}
 --- !u!1 &1018432432
 GameObject:
   m_ObjectHideFlags: 0
