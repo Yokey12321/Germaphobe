@@ -10,11 +10,13 @@ public class RangedVirus : MonoBehaviour
     public GameObject rnaVirus;
     private GameObject projectileContainerPrefab;
     private float stoppingX;
+    AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Shoot", 1, 3);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,6 +36,8 @@ public class RangedVirus : MonoBehaviour
         projectile.transform.parent = projectileContainerPrefab.transform;
         projectile.GetComponent<Renderer>().sortingOrder = 100;
         projectileObject.layer = LayerMask.NameToLayer("Enemies");
+
+        audioSource.Play();
     }
 
     public void SetWyatt(GameObject wyatt)
