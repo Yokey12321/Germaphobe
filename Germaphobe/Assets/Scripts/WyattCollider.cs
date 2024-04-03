@@ -25,8 +25,6 @@ public class WyattCollider : MonoBehaviour
         if (collision.gameObject.GetComponent<MeleeVirus>() != null)
         {
             wyattController.ChangeHealth(-1);
-            Debug.Log("Player collided with virus");
-            StartCoroutine(wyattController.damageFlickerRoutine());
         }
     }
 }

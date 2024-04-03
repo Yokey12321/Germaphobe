@@ -36,8 +36,6 @@ public class EatingCollider : MonoBehaviour
         if (virus != null)
         {
             wyattScript.removeFirstVirusFromList();
-
-            Weeyat.ChangeHealth(-1);
             Debug.Log("Player collided with virus");
         }
     }
