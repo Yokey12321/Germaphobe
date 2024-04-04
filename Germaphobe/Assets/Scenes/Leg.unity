@@ -559,6 +559,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 284603901}
+  - component: {fileID: 284603902}
   m_Layer: 5
   m_Name: WyattLivesBar
   m_TagString: Untagged
@@ -586,6 +587,20 @@ RectTransform:
   m_AnchoredPosition: {x: -400, y: -200}
   m_SizeDelta: {x: 266, y: 50}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!114 &284603902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284603900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6230c078229cf6f49ba1ca767dd6cd62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask: {fileID: 1164034894}
+  wyattLives: 5
 --- !u!1 &387291732
 GameObject:
   m_ObjectHideFlags: 0

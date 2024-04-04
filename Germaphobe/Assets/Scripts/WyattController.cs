@@ -90,6 +90,7 @@ public class WyattController : MonoBehaviour
             isFlickering = true;
 
             StartCoroutine(damageFlickerRoutine());
+            WyattLivesBar.instance.DamageWyatt(amount);
 
             if (isInvincible)
                 return;
