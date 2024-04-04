@@ -11202,12 +11202,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020508791}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a353e7de44bb662489e309c32dfe01e8, type: 3}
+  m_Script: {fileID: 11500000, guid: 6230c078229cf6f49ba1ca767dd6cd62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mask: {fileID: 1339949445}
-  bodyHealth: 10
-  triggerList: []
 --- !u!1 &2092055565
 GameObject:
   m_ObjectHideFlags: 0
