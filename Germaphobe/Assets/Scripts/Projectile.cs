@@ -31,16 +31,9 @@ public class Projectile : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
-    }
-
-    /*void OnCollisionEnter2D(Collision2D other)
-    {
-        EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e != null)
+        if (collision.gameObject.layer == 7)
         {
-            e.Fix();
+            Destroy(gameObject);
         }
-
-        Destroy(gameObject);
-    }*/
+    }
 }

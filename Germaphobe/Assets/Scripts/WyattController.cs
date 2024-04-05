@@ -5,6 +5,8 @@ using UnityEngine;
 public class WyattController : MonoBehaviour
 {
     public float speed = 3.0f;
+    protected float vertical;
+    protected float horizontal;
 
     public GameObject projectilePrefab;
     public GameObject projectileContainerPrefab;
@@ -13,6 +15,7 @@ public class WyattController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private bool isFlickering = false;
     private float projectileTime = 0;
+    protected Vector2 lookdir;
 
     public ParticleSystem eatingParticles;
 
@@ -30,7 +33,6 @@ public class WyattController : MonoBehaviour
     private List<GameObject> eatableViruses = new List<GameObject>(); 
 
     Animator animator;
-    Vector2 lookDirection = new Vector2(1, 0);
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -45,6 +47,8 @@ public class WyattController : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
+        vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.C) && projectileCooldown == projectileTime)
         {
             Launch();
@@ -77,7 +81,8 @@ public class WyattController : MonoBehaviour
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position, Quaternion.identity);
 
         Projectile projectile = projectileObject.GetComponent<Projectile>();
-        projectile.Launch(lookDirection, 300);
+        projectile.Launch(lookdir, 300);
+        Debug.Log(lookdir);
         projectile.transform.parent = projectileContainerPrefab.transform;
         projectile.GetComponent<Renderer>().sortingOrder = 100;
         //animator.SetTrigger("Launch");

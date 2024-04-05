@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class WyattLeg : WyattController
 {
-    float vertical;
 
     // Start is called before the first frame update
     new void Start()
     {
         base.Start();
-        rigidbody2d = GetComponent<Rigidbody2D>();
+        lookdir = Vector2.right;
     }
 
     // Update is called once per frame
     new void Update()
     {
         base.Update();
-        vertical = Input.GetAxis("Vertical");
     }
 
     new void FixedUpdate()
