@@ -6,6 +6,11 @@ public class Projectile : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
 
+    private void Start()
+    {
+        Invoke("Die", 3);
+    }
+
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -35,5 +40,10 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    
+    public void Die()
+    {
+        Destroy(gameObject);
     }
 }
