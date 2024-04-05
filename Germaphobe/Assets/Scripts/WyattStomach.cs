@@ -10,6 +10,7 @@ public class WyattStomach : WyattController
     new void Start()
     {
         base.Start();
+        lookdir = Vector2.right;
     }
 
     // Update is called once per frame

@@ -79,7 +79,7 @@ public class WyattController : MonoBehaviour
     void Launch()
     {
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position, Quaternion.identity);
-
+        projectileObject.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, lookdir));
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(lookdir, 300);
         Debug.Log(lookdir);

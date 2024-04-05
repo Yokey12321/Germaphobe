@@ -9,26 +9,20 @@ public class EnemySpawner : MonoBehaviour
     private int time;
     public GameObject meleeVirusPrefab;
     public GameObject rangedVirusPrefab;
-    public float speed;
-    private int direction = 1;
     public GameObject enemiesParent;
     public GameObject healthBar;
     public GameObject wyatt;
     public GameObject projectileContainerPrefab;
+    protected Vector2 lookdir;
 
-    void Start()
+    protected void Start()
     {
         InvokeRepeating("TrySpawn", 0, 0.5f);
     }
 
-    private void FixedUpdate()
+    protected private void FixedUpdate()
     {
-        float nextY = transform.position.y + direction * speed * Time.deltaTime;
-        if (nextY > 2.5 || nextY < -2.5) {
-            nextY = (5 - Math.Abs(nextY)) * direction;
-            direction *= -1;
-        }
-        transform.position = new Vector3(transform.position.x, nextY, 0);
+
     }
 
     void TrySpawn()
@@ -56,7 +50,7 @@ public class EnemySpawner : MonoBehaviour
             virus.GetComponent<RangedVirus>().setProjectilePrefab(projectileContainerPrefab);
             virus.GetComponent<RangedVirus>().setStoppingX(UnityEngine.Random.Range(4f, 7f));
         }
-        virus.transform.position = new Vector3(10, transform.position.y, 0);
+        virus.transform.position = new Vector3(transform.position.x, transform.position.y, 0) + transform.forward;
         virus.transform.parent = enemiesParent.transform;
         virus.layer = LayerMask.NameToLayer("Enemies");
     }
