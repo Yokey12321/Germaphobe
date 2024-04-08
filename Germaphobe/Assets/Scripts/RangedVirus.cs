@@ -11,12 +11,14 @@ public class RangedVirus : MonoBehaviour
     private GameObject projectileContainerPrefab;
     private float stoppingX;
     AudioSource audioSource;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("Shoot", 1, 3);
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -53,6 +55,12 @@ public class RangedVirus : MonoBehaviour
     public void setStoppingX(float x)
     {
         stoppingX = x;
+    }
+
+    public void deathAnimation()
+    {
+        Destroy(gameObject, 0.5f);
+        animator.Play("RangedMinionDead");
     }
 
 }

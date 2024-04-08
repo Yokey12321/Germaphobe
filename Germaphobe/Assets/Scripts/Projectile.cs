@@ -33,7 +33,8 @@ public class Projectile : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<RangedVirus>() != null)
         {
-            Destroy(collision.gameObject);
+            collision.gameObject.GetComponent<RangedVirus>().deathAnimation();
+            /*Destroy(collision.gameObject);*/
             Destroy(gameObject);
         }
         if (collision.gameObject.layer == 7)
