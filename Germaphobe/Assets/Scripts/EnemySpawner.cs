@@ -50,7 +50,7 @@ public class EnemySpawner : MonoBehaviour
             virus.GetComponent<RangedVirus>().setProjectilePrefab(projectileContainerPrefab);
             virus.GetComponent<RangedVirus>().setStoppingX(UnityEngine.Random.Range(4f, 7f));
         }
-        virus.transform.position = new Vector3(transform.position.x, transform.position.y, 0) + transform.forward;
+        virus.transform.position = new Vector3(transform.position.x, transform.position.y, 0) + transform.right * 5;
         virus.transform.parent = enemiesParent.transform;
         virus.layer = LayerMask.NameToLayer("Enemies");
     }
