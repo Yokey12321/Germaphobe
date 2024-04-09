@@ -9,7 +9,7 @@ public class RangedVirus : MonoBehaviour
     public float speed = 10f;
     public GameObject rnaVirus;
     private GameObject projectileContainerPrefab;
-    private float stoppingX;
+    protected float stoppingX;
     AudioSource audioSource;
     Animator animator;
 
@@ -52,10 +52,7 @@ public class RangedVirus : MonoBehaviour
         this.projectileContainerPrefab = projectileContainerPrefab;
     }
 
-    public void setStoppingX(float x)
-    {
-        stoppingX = x;
-    }
+    
 
     public void deathAnimation()
     {
@@ -63,4 +60,8 @@ public class RangedVirus : MonoBehaviour
         animator.Play("RangedMinionDead");
     }
 
+    public void setStoppingX(float x)
+    {
+        stoppingX = x;
+    }
 }
