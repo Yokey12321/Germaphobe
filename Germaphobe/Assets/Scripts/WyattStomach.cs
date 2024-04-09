@@ -5,6 +5,8 @@ using UnityEngine;
 public class WyattStomach : WyattController
 {
     public float rotationSpeed;
+    private float dashTimer = 0;
+    public float dashCooldown;
 
     // Start is called before the first frame update
     new void Start()
@@ -17,11 +19,19 @@ public class WyattStomach : WyattController
     new void Update()
     {
         base.Update();
+        Debug.Log(Input.GetKeyDown(KeyCode.X));
+        if (Input.GetKeyDown(KeyCode.X) && dashTimer == dashCooldown)
+        {
+            Debug.Log("hi");
+            Dash();
+            dashTimer = 0;
+        }
     }
 
     protected new void FixedUpdate()
     {
         base.FixedUpdate();
+        dashTimer = Mathf.Clamp(dashTimer + Time.deltaTime, 0, dashCooldown);
         if (!(Mathf.Floor(horizontal) == 0 && Mathf.Floor(vertical) == 0))
         {
             /*
@@ -62,4 +72,10 @@ public class WyattStomach : WyattController
         }
 
     }
+
+    public void Dash()
+    {
+        rigidbody2d.AddForce(lookdir * 200);
+    }
+
 }

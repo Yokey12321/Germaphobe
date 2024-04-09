@@ -34,6 +34,8 @@ public class WyattController : MonoBehaviour
 
     Animator animator;
 
+    public GameObject wyattLivesBar;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -95,7 +97,7 @@ public class WyattController : MonoBehaviour
             isFlickering = true;
 
             StartCoroutine(damageFlickerRoutine());
-            WyattLivesBar.instance.DamageWyatt(amount);
+            wyattLivesBar.GetComponent<WyattLivesBar>().DamageWyatt(amount);
 
             if (isInvincible)
                 return;
