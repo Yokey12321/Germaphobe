@@ -19,10 +19,8 @@ public class WyattStomach : WyattController
     new void Update()
     {
         base.Update();
-        Debug.Log(Input.GetKeyDown(KeyCode.X));
         if (Input.GetKeyDown(KeyCode.X) && dashTimer == dashCooldown)
         {
-            Debug.Log("hi");
             Dash();
             dashTimer = 0;
         }
