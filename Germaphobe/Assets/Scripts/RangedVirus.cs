@@ -14,7 +14,7 @@ public class RangedVirus : MonoBehaviour
     Animator animator;
 
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         InvokeRepeating("Shoot", 1, 3);
         audioSource = GetComponent<AudioSource>();
@@ -22,12 +22,9 @@ public class RangedVirus : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected virtual void Update()
     {
-        if (transform.position.x > stoppingX)
-        {
-            transform.Translate(Vector2.left * speed * Time.deltaTime);
-        }
+        
     }
 
     void Shoot()
