@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6310559450548772788}
   - component: {fileID: 7789202153985255300}
-  - component: {fileID: 4919156292874629526}
   - component: {fileID: 321948422505993487}
   - component: {fileID: -1340102044781113860}
   - component: {fileID: -7176197759456252274}
+  - component: {fileID: 1064903881873090112}
   m_Layer: 0
   m_Name: rangedminion
   m_TagString: Untagged
@@ -86,20 +86,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4919156292874629526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4044081505205973088}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d4a96a8f37c5654983bfa023b28589d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  rnaVirus: {fileID: 6113290115459729492, guid: 91b8fcf7afe4a6c4cb68dbea1b658e5a, type: 3}
 --- !u!58 &321948422505993487
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -231,3 +217,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1064903881873090112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4044081505205973088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3db6c82636c238244969b497f8fd1298, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  rnaVirus: {fileID: 6113290115459729492, guid: 91b8fcf7afe4a6c4cb68dbea1b658e5a, type: 3}
