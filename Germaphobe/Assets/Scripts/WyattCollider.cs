@@ -26,5 +26,11 @@ public class WyattCollider : MonoBehaviour
         {
             wyattController.ChangeHealth(-1);
         }
+
+        if(collision.gameObject.GetComponent<Zinc>() != null)
+        {
+            wyattController.ChangeHealth(1);
+            Destroy(collision.gameObject);
+        }
     }
 }
