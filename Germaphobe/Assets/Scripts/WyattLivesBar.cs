@@ -33,7 +33,6 @@ public class WyattLivesBar : MonoBehaviour
 
     public void updateWidth()
     {
-        Debug.Log(lives / wyattLives);
         mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (lives / wyattLives) * maxWidth);
     }
 }

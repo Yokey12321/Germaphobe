@@ -508,6 +508,55 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4636263544941604570, guid: 53ba762e251329c409a440604d6082ef, type: 3}
   m_PrefabInstance: {fileID: 4636263544678046503}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &344387981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 344387983}
+  - component: {fileID: 344387982}
+  m_Layer: 0
+  m_Name: LegController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &344387982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344387981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 277996126a3aacf468d56634af9468b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles:
+  - {fileID: 1934850456}
+  - {fileID: 1189870757}
+  spawner:
+  - {fileID: 602742303}
+  screen: {fileID: 152090493}
+--- !u!4 &344387983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 344387981}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.7856793, y: 0.19587596, z: -507.63055}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387291732
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,6 +1040,7 @@ GameObject:
   - component: {fileID: 1189870760}
   - component: {fileID: 1189870759}
   - component: {fileID: 1189870758}
+  - component: {fileID: 1189870761}
   m_Layer: 0
   m_Name: ForegroundBlood
   m_TagString: Untagged
@@ -1080,7 +1130,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -5784,6 +5834,18 @@ Transform:
   m_Father: {fileID: 1018432433}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!114 &1189870761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189870757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7477fc01f82c048a8389a3b9f84dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1279214332
 GameObject:
   m_ObjectHideFlags: 0
@@ -6050,6 +6112,7 @@ GameObject:
   - component: {fileID: 1934850457}
   - component: {fileID: 1934850459}
   - component: {fileID: 1934850458}
+  - component: {fileID: 1934850460}
   m_Layer: 0
   m_Name: BackgroundBlood
   m_TagString: Untagged
@@ -6153,7 +6216,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -10861,6 +10924,18 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1934850460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934850456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f7477fc01f82c048a8389a3b9f84dcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2092055565
 GameObject:
   m_ObjectHideFlags: 0

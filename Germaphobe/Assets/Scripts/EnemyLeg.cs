@@ -7,16 +7,9 @@ public class EnemyLeg : EnemySpawner
     // Start is called before the first frame update
     private int direction = 1;
     public float speed;
-    new void Start()
+    void Start()
     {
-        base.Start();
         base.lookdir = Vector2.left;
-    }
-
-    // Update is called once per frame
-    new void Update()
-    {
-        
     }
 
     new void FixedUpdate()
