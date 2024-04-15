@@ -106,6 +106,13 @@ public class WyattController : MonoBehaviour
             invincibleTimer = timeInvincible;
         }
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
+        Debug.Log("current Health " + currentHealth);
+        if(currentHealth == 0f)
+        {
+            Debug.Log("Destroyed");
+            Destroy(gameObject, 0.5f);
+            animator.Play("WyattDeath");
+        }
         Debug.Log(currentHealth + "/" + maxHealth);
     }
 
