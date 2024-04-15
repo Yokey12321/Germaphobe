@@ -13,4 +13,9 @@ public class Particles : MonoBehaviour
     {
         GetComponent<ParticleSystem>().Stop();
     }
+
+    public void PauseParticles()
+    {
+        GetComponent<ParticleSystem>().Pause();
+    }
 }
