@@ -30,6 +30,9 @@ public class WyattCollider : MonoBehaviour
         if(collision.gameObject.GetComponent<Zinc>() != null)
         {
             wyattController.ChangeHealth(1);
+            GameObject livesBar = wyatt.GetComponent<WyattLeg>().wyattLivesBar;
+            livesBar.GetComponent<WyattLivesBar>().DamageWyatt(1);
+
             Destroy(collision.gameObject);
         }
     }
