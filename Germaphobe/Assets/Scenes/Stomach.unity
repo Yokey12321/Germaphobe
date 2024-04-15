@@ -1211,7 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeVirusPrefab: {fileID: 3904797773623498295, guid: 247c8454e21d51345a9d21a9bcc67e27, type: 3}
-  rangedVirusPrefab: {fileID: 4044081505205973088, guid: 15a1effdba71c5a4696d2245c54cd273, type: 3}
+  rangedVirusPrefab: {fileID: 1169011166162364023, guid: 5d275b68c29a8da4bbb2d3e2683bbabb, type: 3}
   enemiesParent: {fileID: 10791388}
   healthBar: {fileID: 1097304545}
   wyatt: {fileID: 8081853711196234231}

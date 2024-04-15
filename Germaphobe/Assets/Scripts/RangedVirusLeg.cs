@@ -5,14 +5,20 @@ using UnityEngine;
 public class RangedVirusLeg : RangedVirus
 {
     //huh
-    new void Start()
+    void Start()
     {
-        
+        base.Start();
     }
 
-    new void Update()
+    void Update()
     {
-        
+
+        base.Update();
+
+        if (transform.position.x > stoppingX)
+        {
+            transform.Translate(Vector2.left * speed * Time.deltaTime);
+        }
     }
 
 }
