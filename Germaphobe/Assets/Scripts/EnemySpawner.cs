@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class EnemySpawner : MonoBehaviour
 {
     // Start is called before the first frame update
 
     private int timeToNextSpawn = 0;
-    private int time;
+    private float time;
     public GameObject meleeVirusPrefab;
     public GameObject rangedVirusPrefab;
     public GameObject enemiesParent;
@@ -14,25 +15,26 @@ public class EnemySpawner : MonoBehaviour
     public GameObject wyatt;
     public GameObject projectileContainerPrefab;
     protected Vector2 lookdir;
+    private bool running = false;
 
-    protected void Start()
-    {
-        InvokeRepeating("TrySpawn", 0, 0.5f);
-    }
 
     protected private void FixedUpdate()
     {
 
     }
 
-    void TrySpawn()
+    public void Update()
     {
-        time++;
-        if (time > timeToNextSpawn)
+        Debug.Log(running);
+        if (running)
         {
-            time = 0;
-            timeToNextSpawn = UnityEngine.Random.Range(5, 10);
-            Spawn();
+            time += Time.deltaTime;
+            if (time > timeToNextSpawn)
+            {
+                time = 0;
+                timeToNextSpawn = UnityEngine.Random.Range(5, 10);
+                Spawn();
+            }
         }
     }
     
@@ -53,6 +55,17 @@ public class EnemySpawner : MonoBehaviour
         virus.transform.position = new Vector3(transform.position.x, transform.position.y, 0) + transform.right * 5;
         virus.transform.parent = enemiesParent.transform;
         virus.layer = LayerMask.NameToLayer("Enemies");
+    }
+
+    public void StartSpawning()
+    {
+        Debug.Log("hi");
+        running = true;
+    }
+    
+    public void EndSpawning()
+    {
+        running = false;
     }
 
 

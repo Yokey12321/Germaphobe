@@ -2,17 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LegController : MonoBehaviour
+public class LegController : Controller
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public GameObject screen;
+
+    new void Start()
     {
-        
+        StartCoroutine("StartSceneFlow");
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        
+
     }
+
+    IEnumerator StartSceneFlow()
+    {
+        yield return new WaitForSeconds(4);
+        base.Start();
+        yield return new WaitForSeconds(5);
+        base.End();
+    }
+
 }
