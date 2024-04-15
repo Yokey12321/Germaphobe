@@ -23,7 +23,7 @@ public class WyattController : MonoBehaviour
     public int health { get { return currentHealth; } }
     int currentHealth;
 
-    public float timeInvincible = 2.0f;
+    public float timeInvincible = 0.8f;
     bool isInvincible;
     float invincibleTimer;
 
@@ -94,13 +94,12 @@ public class WyattController : MonoBehaviour
     {
         if(amount < 0)
         {
-            isFlickering = true;
-
-            StartCoroutine(damageFlickerRoutine());
-            wyattLivesBar.GetComponent<WyattLivesBar>().DamageWyatt(amount);
-
             if (isInvincible)
                 return;
+
+            isFlickering = true;
+            StartCoroutine(damageFlickerRoutine());
+            wyattLivesBar.GetComponent<WyattLivesBar>().DamageWyatt(amount);
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
