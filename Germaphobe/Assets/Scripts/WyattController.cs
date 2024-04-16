@@ -99,7 +99,6 @@ public class WyattController : MonoBehaviour
 
             isFlickering = true;
             StartCoroutine(damageFlickerRoutine());
-            wyattLivesBar.GetComponent<WyattLivesBar>().DamageWyatt(amount);
 
             isInvincible = true;
             invincibleTimer = timeInvincible;
@@ -112,6 +111,7 @@ public class WyattController : MonoBehaviour
             Destroy(gameObject, 0.5f);
             animator.Play("WyattDeath");
         }
+        wyattLivesBar.GetComponent<WyattLivesBar>().updateWidth((1.0f * currentHealth)/maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);
     }
 

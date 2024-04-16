@@ -9,13 +9,10 @@ public class WyattLivesBar : MonoBehaviour
     public static WyattLivesBar instance;
     public Image mask;
     private float maxWidth;
-    public float wyattLives;
-    private float lives;
     // Start is called before the first frame update
     void Start()
     {
         maxWidth = mask.rectTransform.rect.width;
-        lives = wyattLives;
         instance = this;
     }
 
@@ -25,14 +22,8 @@ public class WyattLivesBar : MonoBehaviour
         
     }
 
-    public void DamageWyatt(float x)
+    public void updateWidth(float percentage)
     {
-        lives = Math.Max(0, lives + x);
-        updateWidth();
-    }
-
-    public void updateWidth()
-    {
-        mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, (lives / wyattLives) * maxWidth);
+        mask.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, percentage * maxWidth);
     }
 }
