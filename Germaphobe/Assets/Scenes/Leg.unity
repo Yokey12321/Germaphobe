@@ -369,11 +369,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &41685044 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6448382812040371611, guid: 19a4045ec1f0be74687aa3273a62d565, type: 3}
-  m_PrefabInstance: {fileID: 1780046414}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &152090493
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,7 +731,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1018432433}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &602742305
 MonoBehaviour:
@@ -889,6 +884,50 @@ Transform:
   m_Father: {fileID: 1018432433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &820072892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820072893}
+  - component: {fileID: 820072894}
+  m_Layer: 0
+  m_Name: ZincSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820072893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820072892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1018432433}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &820072894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820072892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403cba551d2da1c49935954731fcaf7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ZincPrefab: {fileID: 3213800664839945375, guid: 19a4045ec1f0be74687aa3273a62d565, type: 3}
 --- !u!1 &898676023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,11 +1062,11 @@ Transform:
   m_Children:
   - {fileID: 706328021}
   - {fileID: 11604875}
-  - {fileID: 41685044}
   - {fileID: 1934850457}
   - {fileID: 1189870760}
   - {fileID: 602742304}
   - {fileID: 1741345447}
+  - {fileID: 820072893}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5834,7 +5873,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1018432433}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!114 &1189870761
 MonoBehaviour:
@@ -6160,7 +6199,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1018432433}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1742007334 stripped
 GameObject:
@@ -6401,7 +6440,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1018432433}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!199 &1934850458
 ParticleSystemRenderer:
