@@ -21,10 +21,10 @@ public class LegController : Controller
     IEnumerator StartSceneFlow()
     {
         base.Prewarm();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
         yield return runDialogue(dialogue.Split('\n'));
         base.Start();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(30);
         base.End();
     }
 

@@ -30,7 +30,7 @@ public class Controller : MonoBehaviour
         }
         foreach (var item in spawner)
         {
-            item.GetComponent<EnemySpawner>().StartSpawning();
+            item.GetComponent<Spawner>().StartSpawning();
         }
     }
 
@@ -42,7 +42,7 @@ public class Controller : MonoBehaviour
         }
         foreach (var item in spawner)
         {
-            item.GetComponent<EnemySpawner>().EndSpawning();
+            item.GetComponent<Spawner>().StopSpawning();
         }
     }
 
@@ -50,12 +50,19 @@ public class Controller : MonoBehaviour
     {
         text.gameObject.transform.parent.gameObject.SetActive(true);
         IEnumerator<string> iter = ((IEnumerable<string>)lines).GetEnumerator();
-        iter.MoveNext();
-        text.text = iter.Current;
-        yield return waitForDialogueClick();
         while (iter.MoveNext())
         {
-            text.text = iter.Current;
+            string s = "";
+            foreach (char c in iter.Current.ToCharArray())
+            {
+                s += c;
+                text.text = s;
+                if (dialogueBoxClicked)
+                {
+                    continue;
+                }
+                yield return new WaitForSeconds(0.01f);
+            }
             yield return waitForDialogueClick();
         }
         text.gameObject.transform.parent.gameObject.SetActive(false);

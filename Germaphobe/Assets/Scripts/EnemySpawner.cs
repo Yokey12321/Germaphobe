@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner : Spawner
 {
     // Start is called before the first frame update
 
@@ -15,7 +15,6 @@ public class EnemySpawner : MonoBehaviour
     public GameObject wyatt;
     public GameObject projectileContainerPrefab;
     protected Vector2 lookdir;
-    private bool running = false;
 
 
     protected private void FixedUpdate()
@@ -25,7 +24,6 @@ public class EnemySpawner : MonoBehaviour
 
     public void Update()
     {
-        Debug.Log(running);
         if (running)
         {
             time += Time.deltaTime;
@@ -56,17 +54,5 @@ public class EnemySpawner : MonoBehaviour
         virus.transform.parent = enemiesParent.transform;
         virus.layer = LayerMask.NameToLayer("Enemies");
     }
-
-    public void StartSpawning()
-    {
-        Debug.Log("hi");
-        running = true;
-    }
-    
-    public void EndSpawning()
-    {
-        running = false;
-    }
-
 
 }

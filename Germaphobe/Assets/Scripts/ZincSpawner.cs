@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZincSpawner : MonoBehaviour
+public class ZincSpawner : Spawner
 {
 
     private int timeToNextSpawn = 0;
     private float time;
     public GameObject ZincPrefab;
-    private bool runningZinc = false;
 
 
     protected private void FixedUpdate()
@@ -16,15 +15,9 @@ public class ZincSpawner : MonoBehaviour
 
     }
 
-    private void Start()
-    {
-        runningZinc = true;
-    }
-
     void Update()
     {
-        Debug.Log(runningZinc);
-        if (runningZinc)
+        if (running)
         {
             time += Time.deltaTime;
             if (time > timeToNextSpawn)
