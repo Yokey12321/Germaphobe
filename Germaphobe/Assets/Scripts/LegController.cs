@@ -6,26 +6,40 @@ public class LegController : Controller
 {
 
     public GameObject screen;
-    private string dialogue = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\r\nNunc lacinia metus eu rhoncus consectetur.\r\nCurabitur aliquet nunc nec purus ultricies, vitae tempus turpis ultrices.\r\nCras a mi nec augue tincidunt venenatis.\r\nDonec pulvinar lacus feugiat dolor sodales, sed finibus massa egestas.\r\nNunc semper velit a tellus facilisis, id vehicula nunc blandit.\r\nCurabitur mollis lectus feugiat magna condimentum molestie.\r\nFusce gravida ligula eget interdum imperdiet.\r\nCurabitur sollicitudin est quis magna lobortis maximus.\r\nNullam vel neque imperdiet, eleifend sapien in, consectetur purus.\r\nNam aliquam neque sit amet sapien elementum blandit.\r\nUt tristique ante non pharetra pellentesque.\r\nInteger finibus mi vitae pretium convallis.\r\nIn viverra felis eget consequat viverra.\r\nNunc eu mi pellentesque, fermentum leo ac, rhoncus diam.\r\nMauris rhoncus tortor eu pellentesque pharetra.\r\nEtiam vel nulla in sapien vulputate suscipit.\r\nIn in tortor volutpat, pellentesque elit sed, commodo risus.";
+    private string dialogueStr = @"P: Ah, the femoral artery! Only the biggest and best highway down south. What a marvel. 
+P: It’s been a while since I’ve laid my eyes on such a beautiful masterpiece of arteritecture.
+R: Arteri what now? Where are we going?
+W: To the heart.
+R: That far? That’s a long distance though…
+W: Don’t worry Redd, we got this! B positive.
+R: Umm, I don’t know… I’m O negative.
+P: Hey guys… Viruses ahead. Make sure to keep an IgG ahead. Speaking of Immunoglobulin G, did you know it’s the most common type of antibody in the blood?
+W: Yeah, we know. I’m a white blood cell after all. Heck I got the B Cell blaster, so I launch those things with the C key. 
+P: You’re right. 
+R: Wait, Wyatt. You can also eat viruses with SPACE right?
+W: That’s correct buddy. I’m a macrophage after all. Now let’s send these viruses to outer space.";
 
     new void Start()
     {
         StartCoroutine("StartSceneFlow");
     }
 
-    public void Update()
-    {
 
+    new void Update()
+    {
+        base.Update();
     }
 
     IEnumerator StartSceneFlow()
     {
         base.Prewarm();
         yield return new WaitForSeconds(1);
-        yield return runDialogue(dialogue.Split('\n'));
+        yield return runDialogue(dialogueStr.Split('\n'));
         base.Start();
+        screen.GetComponent<ScreenControls>().StartMotion();
         yield return new WaitForSeconds(30);
         base.End();
+        screen.GetComponent<ScreenControls>().StopMotion();
     }
 
 }

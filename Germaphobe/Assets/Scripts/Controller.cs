@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Controller : MonoBehaviour
 {
@@ -9,7 +10,11 @@ public class Controller : MonoBehaviour
     public GameObject[] particles;
     public GameObject[] spawner;
     public TMP_Text text;
+    public Image icon;
     private bool dialogueBoxClicked;
+    public GameObject sprites;
+    private bool dialogueRunning = false;
+    private bool skipDialogue = false;
 
     // Start is called before the first frame update
 
@@ -34,6 +39,14 @@ public class Controller : MonoBehaviour
         }
     }
 
+    protected void Update()
+    {
+        if (dialogueRunning && Input.GetKeyDown("H"))
+        {
+            skipDialogue = true;
+        }
+    }
+
     protected void End()
     {
         foreach (var item in particles)
@@ -48,12 +61,16 @@ public class Controller : MonoBehaviour
 
     protected IEnumerator runDialogue(string[] lines)
     {
+        dialogueRunning = true;
         text.gameObject.transform.parent.gameObject.SetActive(true);
         IEnumerator<string> iter = ((IEnumerable<string>)lines).GetEnumerator();
-        while (iter.MoveNext())
+        while (iter.MoveNext()) 
         {
+            string[] data = iter.Current.Split(new char[] { ' '}, 2);
             string s = "";
-            foreach (char c in iter.Current.ToCharArray())
+            Debug.Log(data);
+            icon.GetComponent<Image>().sprite = sprites.GetComponent<DialogueSprites>().getIcon(data[0].Substring(0,1));
+            foreach (char c in data[1].ToCharArray())
             {
                 s += c;
                 text.text = s;
@@ -61,11 +78,19 @@ public class Controller : MonoBehaviour
                 {
                     continue;
                 }
+                if (skipDialogue)
+                {
+                    text.gameObject.transform.parent.gameObject.SetActive(false);
+                    dialogueRunning = false;
+                    skipDialogue = false;
+                    yield break;
+                }
                 yield return new WaitForSeconds(0.01f);
             }
             yield return waitForDialogueClick();
         }
         text.gameObject.transform.parent.gameObject.SetActive(false);
+        dialogueRunning = false;
     }  
 
     protected IEnumerator waitForDialogueClick()

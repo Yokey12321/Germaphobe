@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2760066257613534249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2760066257613534251}
+  - component: {fileID: 2760066257613534250}
+  m_Layer: 0
+  m_Name: DialogueSprites
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2760066257613534251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2760066257613534249}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 367.58902, y: 207.67853, z: -78.39077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2760066257613534250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2760066257613534249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6043445f2889c324d94d23587afac97f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  platoReddWyattJeremySprites:
+  - {fileID: 5230459431773687671, guid: a4267b54a7c6a4a4688f121d8ae38b40, type: 3}
+  - {fileID: -8865787417763808140, guid: 4208f1d1b667c4a40b66df5c5f54cf7d, type: 3}
+  - {fileID: -7222494424747563225, guid: cb513d1f54063b74ea417069115b9052, type: 3}
+  - {fileID: -7222494424747563225, guid: cb513d1f54063b74ea417069115b9052, type: 3}
