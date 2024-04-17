@@ -18,6 +18,7 @@ public class WyattController : MonoBehaviour
     protected Vector2 lookdir;
 
     public ParticleSystem eatingParticles;
+    public ParticleSystem healingParticles;
 
     public int maxHealth = 5;
     public int health { get { return currentHealth; } }
@@ -110,6 +111,10 @@ public class WyattController : MonoBehaviour
             Debug.Log("Destroyed");
             Destroy(gameObject, 0.5f);
             animator.Play("WyattDeath");
+        }
+        if(amount > 0)
+        {
+            healingParticles.Play();
         }
         wyattLivesBar.GetComponent<WyattLivesBar>().updateWidth((1.0f * currentHealth)/maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);

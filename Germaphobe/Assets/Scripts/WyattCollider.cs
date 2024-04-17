@@ -8,10 +8,12 @@ public class WyattCollider : MonoBehaviour
 
     public GameObject wyatt;
     WyattController wyattController;
+    AudioSource audioSource;
 
     void Start()
     {
         wyattController = wyatt.GetComponent<WyattController>();
+        audioSource = GetComponent<AudioSource>(); 
     }
 
     // Update is called once per frame
@@ -30,6 +32,7 @@ public class WyattCollider : MonoBehaviour
         if(collision.gameObject.GetComponent<Zinc>() != null)
         {
             wyattController.ChangeHealth(1);
+            audioSource.Play();
             GameObject livesBar = wyatt.GetComponent<WyattLeg>().wyattLivesBar;
 
             Destroy(collision.gameObject);
