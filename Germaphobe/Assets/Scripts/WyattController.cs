@@ -114,7 +114,7 @@ public class WyattController : MonoBehaviour
         }
         if(amount > 0)
         {
-            healingParticles.Play();
+            //healingParticles.Play();
         }
         wyattLivesBar.GetComponent<WyattLivesBar>().updateWidth((1.0f * currentHealth)/maxHealth);
         Debug.Log(currentHealth + "/" + maxHealth);

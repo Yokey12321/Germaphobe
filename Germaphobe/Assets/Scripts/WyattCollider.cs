@@ -33,8 +33,6 @@ public class WyattCollider : MonoBehaviour
         {
             wyattController.ChangeHealth(1);
             audioSource.Play();
-            GameObject livesBar = wyatt.GetComponent<WyattLeg>().wyattLivesBar;
-
             Destroy(collision.gameObject);
         }
     }
