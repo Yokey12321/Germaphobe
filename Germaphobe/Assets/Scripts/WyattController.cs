@@ -142,6 +142,11 @@ public class WyattController : MonoBehaviour
         eatableViruses.RemoveAt(0);
     }
 
+    public bool isMaxHealth()
+    {
+        return currentHealth == maxHealth;
+    }
+
     public IEnumerator damageFlickerRoutine()
     {
         while(isFlickering == true)

@@ -31,6 +31,8 @@ public class WyattCollider : MonoBehaviour
 
         if(collision.gameObject.GetComponent<Zinc>() != null)
         {
+            if (wyatt.GetComponent<WyattController>().isMaxHealth())
+                return;
             wyattController.ChangeHealth(1);
             audioSource.Play();
             Destroy(collision.gameObject);
