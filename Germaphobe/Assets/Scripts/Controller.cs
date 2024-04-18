@@ -41,7 +41,7 @@ public class Controller : MonoBehaviour
 
     protected void Update()
     {
-        if (dialogueRunning && Input.GetKeyDown("H"))
+        if (dialogueRunning && Input.GetKeyDown("h"))
         {
             skipDialogue = true;
         }
