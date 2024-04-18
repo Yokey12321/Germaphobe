@@ -44,6 +44,7 @@ public class Controller : MonoBehaviour
         if (dialogueRunning && Input.GetKeyDown("h"))
         {
             skipDialogue = true;
+            dialogueBoxClicked = true;
         }
     }
 
