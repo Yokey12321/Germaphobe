@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LegController : Controller
 {
@@ -18,7 +19,12 @@ W: Yeah, we know. I’m a white blood cell after all. Heck I got the B Cell blaste
 P: You’re right. 
 R: Wait, Wyatt. You can also eat viruses with SPACE right?
 W: That’s correct buddy. I’m a macrophage after all. Now let’s send these viruses to outer space.";
-
+    private string dialogueStr2 = @"R: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
+W: Thanks, Redd.
+P: Wyatt, you said C to shoot and SPACE to eat right?
+W: That’s correct.
+R: We’ve reached the stomach. I’m leaving the extra Zinc behind. There'll be more in the stomach.
+W: Let’s go!";
     new void Start()
     {
         StartCoroutine("StartSceneFlow");
@@ -39,7 +45,11 @@ W: That’s correct buddy. I’m a macrophage after all. Now let’s send these viruse
         screen.GetComponent<ScreenControls>().StartMotion();
         yield return new WaitForSeconds(30);
         base.End();
+        yield return new WaitForSeconds(5);
         screen.GetComponent<ScreenControls>().StopMotion();
+        yield return runDialogue(dialogueStr2.Split('\n'));
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene("Stomach");
     }
 
 }
