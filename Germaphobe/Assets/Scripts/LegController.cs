@@ -48,7 +48,6 @@ W: Let’s go!";
         yield return new WaitForSeconds(5);
         screen.GetComponent<ScreenControls>().StopMotion();
         yield return runDialogue(dialogueStr2.Split('\n'));
-        yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Stomach");
     }
 
