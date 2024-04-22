@@ -18,13 +18,13 @@ P: Hey guys… Viruses ahead. Make sure to keep an IgG ahead. Speaking of Immunogl
 W: Yeah, we know. I’m a white blood cell after all. Heck I got the B Cell blaster, so I launch those things with the C key. 
 P: You’re right. 
 R: Wait, Wyatt. You can also eat viruses with SPACE right?
-W: That’s correct buddy. I’m a macrophage after all. Now let’s send these viruses to outer space.";
-    private string dialogueStr2 = @"R: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
-W: Thanks, Redd.
-P: Wyatt, you said C to shoot and SPACE to eat right?
-W: That’s correct.
-R: We’ve reached the stomach. I’m leaving the extra Zinc behind. There'll be more in the stomach.
-W: Let’s go!";
+P: Only the viruses with the boxing gloves right? Those viruses who stay behind are immune! That's what the Immunoglobulin is for. 
+W: That’s correct, Redd and Plato. I’m a macrophage after all. Now let’s send these viruses to outer space.";
+    private string dialogueStr2 = @"P: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
+W: Thanks, Plato.
+P: No problem. Zinc is super healthy for white blood cells like you.
+W: We’ve reached the stomach, so leave the zinc behind. There'll be more later.
+P: Alright then, let’s go!";
     new void Start()
     {
         StartCoroutine("StartSceneFlow");
