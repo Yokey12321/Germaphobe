@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 using UnityEngine.SceneManagement;
 
 public class LegController : Controller
@@ -25,6 +26,15 @@ W: Thanks, Plato.
 P: No problem. Zinc is super healthy for white blood cells like you.
 W: We’ve reached the stomach, so leave the zinc behind. There'll be more later.
 P: Alright then, let’s go!";
+
+    public GameObject wyatt;
+    public GameObject rnaPiece;
+    private bool pieceMoving = false;
+    private bool wyattMoving = false;
+    private bool meleeMoving = false;
+    private bool rangedMoving = false;
+    private GameObject r;
+
     new void Start()
     {
         StartCoroutine("StartSceneFlow");
@@ -43,12 +53,67 @@ P: Alright then, let’s go!";
         yield return runDialogue(dialogueStr.Split('\n'));
         base.Start();
         screen.GetComponent<ScreenControls>().StartMotion();
-        yield return new WaitForSeconds(30);
+        yield return new WaitForSeconds(1);
         base.End();
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3f);
+        spawnRna();
+        yield return new WaitForSeconds(2f);
         screen.GetComponent<ScreenControls>().StopMotion();
+        wyattMoving = true;
         yield return runDialogue(dialogueStr2.Split('\n'));
         SceneManager.LoadScene("Stomach");
+    }
+
+    public void rnaPieceCollection()
+    {
+
+    }
+
+    void spawnRna()
+    {
+        r = Instantiate(rnaPiece, new Vector3(10, 0, 0), Quaternion.identity);
+        pieceMoving = true;
+    }
+
+    void spawnMelee()
+    {
+
+    }
+
+    void spawnRanged()
+    {
+
+    }
+
+    private void FixedUpdate()
+    {
+        if (pieceMoving)
+        {
+
+            Vector3 newPos = Vector3.MoveTowards(r.transform.position, Vector3.zero, 5 * Time.deltaTime);
+            if (newPos == r.transform.position)
+            {
+                pieceMoving = false;
+            }
+            r.transform.position = newPos;
+        }
+        if (wyattMoving)
+        {
+            Vector3 newPos = Vector3.MoveTowards(wyatt.transform.position, Vector3.zero, 5 * Time.deltaTime);
+            if (newPos == wyatt.transform.position)
+            {
+                wyattMoving = false;
+            }
+            wyatt.transform.position = newPos;
+        }
+        if (rangedMoving)
+        {
+
+        }
+        if (meleeMoving)
+        {
+
+        }
     }
 
 }

@@ -588,6 +588,8 @@ MonoBehaviour:
   icon: {fileID: 1129958245}
   sprites: {fileID: 2041022065}
   screen: {fileID: 152090493}
+  wyatt: {fileID: 11604873}
+  rnaPiece: {fileID: 3221554858706687256, guid: 9cd485a193c36da48b43084437bebb94, type: 3}
 --- !u!4 &344387983
 Transform:
   m_ObjectHideFlags: 0

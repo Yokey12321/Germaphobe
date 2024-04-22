@@ -15,7 +15,6 @@ public class Zinc : MonoBehaviour
     private void Update()
     {
         float multiplier = Random.Range(0.5f, 1.0f);
-        Debug.Log(Time.deltaTime * direction * multiplier * rotSpeed);
         transform.Rotate(new Vector3(0, 0, rotSpeed * Time.deltaTime * direction * multiplier), Space.World);
     }
 
