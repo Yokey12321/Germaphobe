@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.Progress;
 
 public class Controller : MonoBehaviour
 {
@@ -67,32 +68,36 @@ public class Controller : MonoBehaviour
         IEnumerator<string> iter = ((IEnumerable<string>)lines).GetEnumerator();
         while (iter.MoveNext()) 
         {
-            string[] data = iter.Current.Split(new char[] { ' '}, 2);
-            string s = "";
-            Debug.Log(data);
-            icon.GetComponent<Image>().sprite = sprites.GetComponent<DialogueSprites>().getIcon(data[0].Substring(0,1));
-            foreach (char c in data[1].ToCharArray())
-            {
-                s += c;
-                text.text = s;
-                if (dialogueBoxClicked)
-                {
-                    continue;
-                }
-                if (skipDialogue)
-                {
-                    text.gameObject.transform.parent.gameObject.SetActive(false);
-                    dialogueRunning = false;
-                    skipDialogue = false;
-                    yield break;
-                }
-                yield return new WaitForSeconds(0.01f);
-            }
+            yield return runLineDialog(iter.Current);
             yield return waitForDialogueClick();
         }
         text.gameObject.transform.parent.gameObject.SetActive(false);
         dialogueRunning = false;
     }  
+
+    protected IEnumerator runLineDialog(string line)
+    {
+        string[] data = line.Split(new char[] { ' ' }, 2);
+        icon.GetComponent<Image>().sprite = sprites.GetComponent<DialogueSprites>().getIcon(data[0].Substring(0, 1));
+        string s = "";
+        foreach (char c in line.ToCharArray())
+        {
+            s += c;
+            text.text = s;
+            if (dialogueBoxClicked)
+            {
+                continue;
+            }
+            if (skipDialogue)
+            {
+                text.gameObject.transform.parent.gameObject.SetActive(false);
+                dialogueRunning = false;
+                skipDialogue = false;
+                yield break;
+            }
+            yield return new WaitForSeconds(0.01f);
+        }
+    }
 
     protected IEnumerator waitForDialogueClick()
     {
