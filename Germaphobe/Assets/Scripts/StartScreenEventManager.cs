@@ -15,7 +15,7 @@ public class StartScreenEventManager : MonoBehaviour
         //3 second delay before next command
         //Invoke("LoadGame", 3);
 
-        SceneManager.LoadScene("Leg"); 
+        SceneManager.LoadScene("StoryIntroduction"); 
     }
 
 

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stomach.unity
     guid: 52f4929a21287a04aa2a5cf666f70771
+  - enabled: 1
+    path: Assets/Scenes/StoryIntroduction.unity
+    guid: f7f06c3152a5a364aa132e61e35f1c87
   m_configObjects: {}

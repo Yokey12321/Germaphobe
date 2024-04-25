@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class CutsceneScript : MonoBehaviour
@@ -13,14 +14,24 @@ public class CutsceneScript : MonoBehaviour
     void Start()
     {
         index = 0;
+        slideImage.sprite = slides[index];
+        index++;
     }
 
     void Update()
     {
         if(Input.GetMouseButtonDown(0) == true)
         {
-            slideImage.sprite = slides[index];
-            index++;
+            if(index >= slides.Length)
+            {
+                SceneManager.LoadScene("Leg");
+            }
+            if(index < slides.Length)
+            {
+                slideImage.sprite = slides[index];
+                index++;
+            }
+            
         }
     }
 
