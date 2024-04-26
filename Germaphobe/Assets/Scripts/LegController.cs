@@ -56,6 +56,7 @@ P: Alright then, let’s go!";
         yield return runDialogue(dialogueStr.Split('\n'));
         yield return new WaitForSeconds(1);
         yield return meleeTutorial();
+        yield return rangedTutorial();
         base.Start();
         screen.GetComponent<ScreenControls>().StartMotion();
         yield return new WaitForSeconds(1);
@@ -96,7 +97,6 @@ P: Alright then, let’s go!";
         ranged = new GameObject("melee dummy");
         ranged.transform.position = new Vector3(10, 0);
         ranged.AddComponent<SpriteRenderer>().sprite = sprite;
-        rangedMoving = true;
         ranged.transform.localScale = new Vector3(0.5f, 0.5f);
     }
 
@@ -111,21 +111,27 @@ P: Alright then, let’s go!";
         }
         spacePressed = false;
         Destroy(melee);
-        yield return runLineDialog("W: I know, I know.");
+        yield return runDialogue(new string[]{ "W: I know, I know."});
     }
     
     IEnumerator rangedTutorial()
     {
         spawnRanged();
         text.gameObject.transform.parent.gameObject.SetActive(true);
-        yield return runLineDialog("P: Hey guys... Virus ahead! Quick, Wyatt press SPACE to eat them!");
+        yield return runDialogue(("P: Hey guys... Virus ahead! This time, I think they're gonna keep their distance!" +
+            "\nR: Wyatt, don't you have that blaster?").Split('\n'));
+        yield return runLineDialog("W: I do. Time to press C and shoot them away!");
+        rangedMoving = true;
         while (meleeMoving || !spacePressed)
         {
             yield return null;
         }
         spacePressed = false;
         Destroy(melee);
-        yield return runLineDialog("W: I know, I know.");
+        yield return runLineDialog("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it’s the most common type of antibody in the blood?");
+        yield return runLineDialog("W: Yeah, we know. I’m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
+        yield return runLineDialog("P: That's true! However, I think the viruses that just come at you are immune. Be sure to eat them before they eat you.");
+        yield return runLineDialog("W: Got it. I see more ahead. Let's blast these viruses to outer space.");
     }
 
     private void FixedUpdate()
@@ -151,7 +157,7 @@ P: Alright then, let’s go!";
         }
         if (rangedMoving)
         {
-            Vector3 newPos = Vector3.MoveTowards(ranged.transform.position, new Vector3(8, 0), 5 * Time.deltaTime);
+            Vector3 newPos = Vector3.MoveTowards(ranged.transform.position, new Vector3(7, 0), 5 * Time.deltaTime);
             if (newPos == ranged.transform.position)
             {
                 rangedMoving = false;
