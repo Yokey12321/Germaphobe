@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4990374933161434091}
   - component: {fileID: 3769330288458610841}
   - component: {fileID: 1710199391681636554}
+  - component: {fileID: 8986852394614967279}
   m_Layer: 0
   m_Name: rangedminionstomach
   m_TagString: Untagged
@@ -229,5 +230,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0a3a6ae4eaa1ce4d93d4d193a5753f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 3
   rnaVirus: {fileID: 6113290115459729492, guid: 91b8fcf7afe4a6c4cb68dbea1b658e5a, type: 3}
+--- !u!50 &8986852394614967279
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1169011166162364023}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

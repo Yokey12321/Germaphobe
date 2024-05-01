@@ -331,7 +331,7 @@ GameObject:
   - component: {fileID: 981798115}
   m_Layer: 7
   m_Name: stomach_outline
-  m_TagString: Untagged
+  m_TagString: Border
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6881,7 +6881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03900f2b29c412b48a9f18212d469219, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 5
   projectilePrefab: {fileID: 589406608771338133, guid: aa41447443d336b4c9927f80b0b20be9, type: 3}
   projectileContainerPrefab: {fileID: 1629377685}
   projectileCooldown: 1

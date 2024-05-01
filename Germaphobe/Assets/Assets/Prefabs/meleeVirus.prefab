@@ -13,9 +13,8 @@ GameObject:
   - component: {fileID: 9098453252156187642}
   - component: {fileID: -4112094510552213979}
   - component: {fileID: 2312639385952084538}
-  m_Layer: 0
   - component: {fileID: 6521460748705274864}
-  m_Layer: 3
+  m_Layer: 0
   m_Name: meleeVirus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
