@@ -73,10 +73,16 @@ public class Controller : MonoBehaviour
         }
         text.gameObject.transform.parent.gameObject.SetActive(false);
         dialogueRunning = false;
-    }  
+    }
+    
+    protected IEnumerator runDialogue(string line)
+    {
+        yield return runDialogue(new string[] {line});
+    }
 
     protected IEnumerator runLineDialog(string line)
     {
+        dialogueBoxClicked = false;
         string[] data = line.Split(new char[] { ' ' }, 2);
         icon.GetComponent<Image>().sprite = sprites.GetComponent<DialogueSprites>().getIcon(data[0].Substring(0, 1));
         string s = "";

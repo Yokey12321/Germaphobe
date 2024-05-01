@@ -61,7 +61,7 @@ P: Alright then, let’s go!";
         screen.GetComponent<ScreenControls>().StartMotion();
         yield return new WaitForSeconds(1);
         base.End();
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(30f);
         spawnRna();
         yield return new WaitForSeconds(2f);
         screen.GetComponent<ScreenControls>().StopMotion();
@@ -93,11 +93,13 @@ P: Alright then, let’s go!";
 
     void spawnRanged()
     {
-        Sprite sprite = spawner[0].GetComponent<EnemySpawner>().meleeVirusPrefab.GetComponent<SpriteRenderer>().sprite;
-        ranged = new GameObject("melee dummy");
+        Sprite sprite = spawner[0].GetComponent<EnemySpawner>().rangedVirusPrefab.GetComponent<SpriteRenderer>().sprite;
+        ranged = new GameObject("ranged dummy");
         ranged.transform.position = new Vector3(10, 0);
         ranged.AddComponent<SpriteRenderer>().sprite = sprite;
+        ranged.AddComponent<CircleCollider2D>().radius = 1.93f;
         ranged.transform.localScale = new Vector3(0.5f, 0.5f);
+        ranged.layer = LayerMask.NameToLayer("Enemies");
     }
 
     IEnumerator meleeTutorial()
@@ -117,21 +119,22 @@ P: Alright then, let’s go!";
     IEnumerator rangedTutorial()
     {
         spawnRanged();
-        text.gameObject.transform.parent.gameObject.SetActive(true);
         yield return runDialogue(("P: Hey guys... Virus ahead! This time, I think they're gonna keep their distance!" +
             "\nR: Wyatt, don't you have that blaster?").Split('\n'));
+        text.gameObject.transform.parent.gameObject.SetActive(true);
         yield return runLineDialog("W: I do. Time to press C and shoot them away!");
         rangedMoving = true;
-        while (meleeMoving || !spacePressed)
+        while (ranged != null)
         {
             yield return null;
+            Debug.Log("hi");
         }
-        spacePressed = false;
-        Destroy(melee);
-        yield return runLineDialog("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it’s the most common type of antibody in the blood?");
-        yield return runLineDialog("W: Yeah, we know. I’m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
-        yield return runLineDialog("P: That's true! However, I think the viruses that just come at you are immune. Be sure to eat them before they eat you.");
-        yield return runLineDialog("W: Got it. I see more ahead. Let's blast these viruses to outer space.");
+        Debug.Log("hi2");
+        text.gameObject.transform.parent.gameObject.SetActive(true);
+        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it’s the most common type of antibody in the blood?");
+        yield return runDialogue("W: Yeah, we know. I’m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
+        yield return runDialogue("P: That's true! However, I think the viruses that just come at you are immune. Be sure to eat them before they eat you.");
+        yield return runDialogue("W: Got it. I see more ahead. Let's blast these viruses to outer space.");
     }
 
     private void FixedUpdate()

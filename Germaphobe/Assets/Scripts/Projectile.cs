@@ -41,6 +41,12 @@ public class Projectile : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.name == "ranged dummy")
+        {
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
+        }
     }
     
     public void Die()

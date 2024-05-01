@@ -23,13 +23,13 @@ R: Umm, I don’t know… I’m O negative.";
     // Start is called before the first frame update
     void Start()
     {
-
+        StartCoroutine("StartSceneFlow");
     }
 
     // Update is called once per frame
      void Update()
     {
-        StartCoroutine("StartSceneFlow");
+        
     }
 
     IEnumerator StartSceneFlow()
@@ -58,6 +58,7 @@ R: Umm, I don’t know… I’m O negative.";
 
     protected IEnumerator runLineDialog(string line)
     {
+        dialogueBoxClicked = false;
         string[] data = line.Split(new char[] { ' ' }, 2);
         string s = "";
         foreach (char c in line.ToCharArray())
@@ -66,6 +67,7 @@ R: Umm, I don’t know… I’m O negative.";
             text.text = s;
             if (dialogueBoxClicked)
             {
+                dialogueBoxClicked = false;
                 continue;
             }
             if (skipDialogue)
@@ -91,5 +93,10 @@ R: Umm, I don’t know… I’m O negative.";
             }
             yield return null;
         }
+    }
+
+    public void OnDialogueBoxClicked()
+    {
+        dialogueBoxClicked = true;
     }
 }
