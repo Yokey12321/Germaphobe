@@ -12,8 +12,8 @@ public class StoryController : MonoBehaviour
     private bool dialogueBoxClicked;
     private bool dialogueRunning = false;
     private bool skipDialogue = false;
-    private string introStr = @"P: Ah, the femoral artery! Only the biggest and best highway down south. What a marvel. 
-P: It’s been a while since I’ve laid my eyes on such a beautiful masterpiece of arteritecture.
+    private string introStr = @"P: 50 years ago, the residents of The Host faced their greatest threat: Jeffrey Germ. 
+P: He was a notorious virus that wreaked havoc on the body during Germ War II.
 R: Arteri what now? Where are we going?
 W: To the heart.
 R: That far? That’s a long distance though…
