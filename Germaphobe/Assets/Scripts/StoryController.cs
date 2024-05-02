@@ -9,21 +9,23 @@ public class StoryController : MonoBehaviour
 
     public GameObject screen;
     public TMP_Text text;
+    public AudioSource audioSource;
     private bool dialogueBoxClicked;
     private bool dialogueRunning = false;
     private bool skipDialogue = false;
-    private string introStr = @"P: 50 years ago, the residents of The Host faced their greatest threat: Jeffrey Germ. 
-P: He was a notorious virus that wreaked havoc on the body during Germ War II.
-R: Arteri what now? Where are we going?
-W: To the heart.
-R: That far? That’s a long distance though…
-W: Don’t worry Redd, we got this! B positive.
-R: Umm, I don’t know… I’m O negative.";
+    private string introStr = @" 50 years ago, the residents of The Host faced their greatest threat: Jeffrey Germ. 
+ He was a notorious virus that wreaked havoc on the body during Germ War II.
+ He launched the GermNuke3000, a weapon of mass infection.
+ Despite the Immune Forces’ best efforts, the GermNuke was too powerful.
+ Eventually, tjhe Immune Forces were able to defeat Jeffrey Germ, but not without great loss.
+ Now, Jeffrey's son, Jeremy Germ, has returned to avenge his father's defeat.
+ Only one cell stands in his way: Wyatt Sangre.";
 
     // Start is called before the first frame update
     void Start()
     {
         StartCoroutine("StartSceneFlow");
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -34,7 +36,7 @@ R: Umm, I don’t know… I’m O negative.";
 
     IEnumerator StartSceneFlow()
     {
-        yield return new WaitForSeconds(1);
+        //yield return new WaitForSeconds(1);
         yield return runDialogue(introStr.Split('\n'));
         yield return new WaitForSeconds(1);
         yield return new WaitForSeconds(1);
@@ -50,7 +52,9 @@ R: Umm, I don’t know… I’m O negative.";
         while (iter.MoveNext())
         {
             yield return runLineDialog(iter.Current);
+            audioSource.Play();
             yield return waitForDialogueClick();
+            audioSource.Stop();
         }
         text.gameObject.transform.parent.gameObject.SetActive(false);
         dialogueRunning = false;
