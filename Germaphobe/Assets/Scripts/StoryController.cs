@@ -17,7 +17,7 @@ public class StoryController : MonoBehaviour
  He was a notorious virus that wreaked havoc on the body during Germ War II.
  He launched the GermNuke3000, a weapon of mass infection.
  Despite the Immune Forces’ best efforts, the GermNuke was too powerful.
- Eventually, tjhe Immune Forces were able to defeat Jeffrey Germ, but not without great loss.
+ Eventually, the Immune Forces were able to defeat Jeffrey Germ, but not without great loss.
  Now, Jeffrey's son, Jeremy Germ, has returned to avenge his father's defeat.
  Only one cell stands in his way: Wyatt Sangre.";
 
@@ -46,24 +46,23 @@ public class StoryController : MonoBehaviour
 
     protected IEnumerator runDialogue(string[] lines)
     {
+        audioSource.Play();
         dialogueRunning = true;
         text.gameObject.transform.parent.gameObject.SetActive(true);
         IEnumerator<string> iter = ((IEnumerable<string>)lines).GetEnumerator();
         while (iter.MoveNext())
         {
             yield return runLineDialog(iter.Current);
-            audioSource.Play();
             yield return waitForDialogueClick();
-            audioSource.Stop();
         }
         text.gameObject.transform.parent.gameObject.SetActive(false);
         dialogueRunning = false;
+        audioSource.Stop();
     }
 
     protected IEnumerator runLineDialog(string line)
     {
         dialogueBoxClicked = false;
-        string[] data = line.Split(new char[] { ' ' }, 2);
         string s = "";
         foreach (char c in line.ToCharArray())
         {

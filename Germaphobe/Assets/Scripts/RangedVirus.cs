@@ -26,10 +26,11 @@ public class RangedVirus : MonoBehaviour
     {
         
     }
-    void Shoot()
-    {
-    }
 
+    public void Shoot()
+    {
+
+    }
     public void SetWyatt(GameObject wyatt)
     {
         this.wyatt = wyatt;

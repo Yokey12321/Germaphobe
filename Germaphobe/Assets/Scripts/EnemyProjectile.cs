@@ -31,5 +31,10 @@ public class EnemyProjectile : MonoBehaviour
             collision.gameObject.transform.parent.gameObject.GetComponent<WyattController>().ChangeHealth(-1);
             Destroy(gameObject);
         }
+
+        if (collision.gameObject.layer == 7 || collision.gameObject.layer == 8)
+        {
+            Destroy(gameObject);
+        }
     }
 }

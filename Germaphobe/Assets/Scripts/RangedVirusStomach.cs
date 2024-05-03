@@ -36,7 +36,7 @@ public class RangedVirusStomach : RangedVirus
         Vector2 dir = wyatt.transform.position - transform.position;
         Quaternion lookRot = Quaternion.LookRotation(dir);
         lookRot.x = 0; lookRot.y = 0;
-        projectile.transform.rotation = Quaternion.Slerp(transform.rotation, lookRot, Mathf.Clamp01(3.0f * Time.maximumDeltaTime));
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookRot, Mathf.Clamp01(3.0f * Time.maximumDeltaTime));
         projectile.GetComponent<Renderer>().sortingOrder = 100;
         projectileObject.layer = LayerMask.NameToLayer("Enemies");
         audioSource.Play();

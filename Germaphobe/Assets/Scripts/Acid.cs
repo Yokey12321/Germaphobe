@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -27,10 +28,11 @@ public class Acid : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (mature && collision.gameObject.name == "stomach_outline")
+        if (mature && collision.gameObject.name == "stomach_outline" || mature && collision.gameObject.name.IndexOf("chicken") >= 0)
         {
             Destroy(gameObject);
         }
+
     }
 
 }
