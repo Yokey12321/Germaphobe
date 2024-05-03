@@ -5,12 +5,12 @@ using UnityEngine;
 public class RangedVirus : MonoBehaviour
 {
 
-    private GameObject wyatt;
+    protected GameObject wyatt;
     public float speed = 10f;
     public GameObject rnaVirus;
-    private GameObject projectileContainerPrefab;
+    protected GameObject projectileContainerPrefab;
     protected float stoppingX;
-    AudioSource audioSource;
+    protected AudioSource audioSource;
     Animator animator;
 
     // Start is called before the first frame update
@@ -26,17 +26,8 @@ public class RangedVirus : MonoBehaviour
     {
         
     }
-
     void Shoot()
     {
-        GameObject projectileObject = Instantiate(rnaVirus, transform.position, Quaternion.identity);
-        EnemyProjectile projectile = projectileObject.GetComponent<EnemyProjectile>();
-        projectile.Launch(Vector2.left, 300);
-        projectile.transform.parent = projectileContainerPrefab.transform;
-        projectile.GetComponent<Renderer>().sortingOrder = 100;
-        projectileObject.layer = LayerMask.NameToLayer("Enemies");
-
-        audioSource.Play();
     }
 
     public void SetWyatt(GameObject wyatt)

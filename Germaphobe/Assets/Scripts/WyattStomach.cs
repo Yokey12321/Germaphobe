@@ -63,7 +63,7 @@ public class WyattStomach : WyattController
             lookdir = Quaternion.AngleAxis(finalangle, Vector3.forward) * Vector2.right;
             transform.rotation = Quaternion.Euler(0, 0, finalangle);
             */
-            transform.Translate(new Vector2(horizontal, vertical) * speed * Time.deltaTime, Space.World);
+            rigidbody2d.AddForce(new Vector2(horizontal, vertical) * speed * Time.deltaTime, ForceMode2D.Impulse);
             base.lookdir = Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, new Vector2(horizontal, vertical)), Vector3.forward) * Vector2.right;
             transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, new Vector2(horizontal, vertical)));
             transform.localScale = new Vector3(transform.localScale.x, Mathf.Abs(transform.localScale.y) * (horizontal <= 0 ? -1 : 1), 1);
