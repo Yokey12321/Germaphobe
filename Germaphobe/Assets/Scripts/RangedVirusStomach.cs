@@ -30,7 +30,6 @@ public class RangedVirusStomach : RangedVirus
         if(collision.gameObject.tag == "Border")
         {
             Debug.Log("Border");
-            transform.Rotate(0, 0, -transform.rotation.z);
         }
     }
 }
