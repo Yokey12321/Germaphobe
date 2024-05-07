@@ -84,7 +84,7 @@ public class WyattController : MonoBehaviour
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody2d.position, Quaternion.identity);
         projectileObject.transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, lookdir));
         Projectile projectile = projectileObject.GetComponent<Projectile>();
-        projectile.Launch(lookdir, 300);
+        projectile.Launch(lookdir, 600);
         Debug.Log(lookdir);
         projectile.transform.parent = projectileContainerPrefab.transform;
         projectile.GetComponent<Renderer>().sortingOrder = 100;
