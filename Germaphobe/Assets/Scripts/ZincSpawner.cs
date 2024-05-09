@@ -34,7 +34,7 @@ public class ZincSpawner : Spawner
         GameObject Zinc;
 
         Zinc = Instantiate(ZincPrefab, transform);
-        Zinc.transform.position = new Vector3(-7, UnityEngine.Random.Range(-3, 3.5f), 0);
+        Zinc.transform.position = GameObject.Find("wyatt").gameObject.transform.position +  new Vector3(UnityEngine.Random.Range(-3, 3), UnityEngine.Random.Range(-3, 3), 0);
 
     }
 

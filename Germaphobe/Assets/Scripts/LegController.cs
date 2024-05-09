@@ -11,17 +11,17 @@ public class LegController : Controller
 
     public GameObject screen;
     private string dialogueStr = @"P: Ah, the femoral artery! Only the biggest and best highway down south. What a marvel. 
-P: It’s been a while since I’ve laid my eyes on such a beautiful masterpiece of arteritecture.
+P: Itï¿½s been a while since Iï¿½ve laid my eyes on such a beautiful masterpiece of arteritecture.
 R: Arteri what now? Where are we going?
 W: To the heart.
-R: That far? That’s a long distance though…
-W: Don’t worry Redd, we got this! B positive.
-R: Umm, I don’t know… I’m O negative.";
+R: That far? Thatï¿½s a long distance thoughï¿½
+W: Donï¿½t worry Redd, we got this! B positive.
+R: Umm, I donï¿½t knowï¿½ Iï¿½m O negative.";
     private string dialogueStr2 = @"P: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
 W: Thanks, Plato.
 P: No problem. Zinc is super healthy for white blood cells like you.
-W: We’ve reached the stomach, so leave the zinc behind. There'll be more later.
-P: Alright then, let’s go!";
+W: Weï¿½ve reached the stomach, so leave the zinc behind. There'll be more later.
+P: Alright then, letï¿½s go!";
 
     public GameObject wyatt;
     public GameObject rnaPiece;
@@ -107,7 +107,7 @@ P: Alright then, let’s go!";
         spawnMelee();
         text.gameObject.transform.parent.gameObject.SetActive(true);
         yield return runLineDialog("P: Hey guys... Virus ahead! Quick, Wyatt press SPACE to eat them!");
-        while (meleeMoving || !spacePressed)
+        while (meleeMoving || !spacePressed || Time.timeScale == 0)
         {
             yield return null;
         }
@@ -124,15 +124,15 @@ P: Alright then, let’s go!";
         text.gameObject.transform.parent.gameObject.SetActive(true);
         yield return runLineDialog("W: I do. Time to press C and shoot them away!");
         rangedMoving = true;
-        while (ranged != null)
+        while (ranged != null || Time.timeScale == 0)
         {
             yield return null;
             Debug.Log("hi");
         }
         Debug.Log("hi2");
         text.gameObject.transform.parent.gameObject.SetActive(true);
-        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it’s the most common type of antibody in the blood?");
-        yield return runDialogue("W: Yeah, we know. I’m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
+        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know itï¿½s the most common type of antibody in the blood?");
+        yield return runDialogue("W: Yeah, we know. Iï¿½m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
         yield return runDialogue("P: That's true! However, I think the viruses that just come at you are immune. Be sure to eat them before they eat you.");
         yield return runDialogue("W: Got it. I see more ahead. Let's blast these viruses to outer space.");
     }

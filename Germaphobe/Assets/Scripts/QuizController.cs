@@ -20,6 +20,8 @@ public class QuizController : Controller
     private bool cameraMoving = false;
     private bool wyattMoving = false;
     public GameObject canvas;
+    private bool jeremydying = false;
+    public GameObject jeremy;
 
     // Start is called before the first frame update
     new void Start()
@@ -29,14 +31,48 @@ public class QuizController : Controller
 
     IEnumerator StartSceneFlow()
     {
+        text.gameObject.transform.parent.gameObject.SetActive(true);
+        yield return runDialogue(@"W: Finally, we're out of that sticky situation.
+P: And, we're in a new one. This is the heart where Jeremy Germ resides. The root of it all!
+R: I'm scared! What if he hurts us?
+W: Don't worry Redd, we can defeat him. Just remember what we've learned and all will be okay. Let's continue forward.".Split('\n'));
+        
+        text.gameObject.transform.parent.gameObject.SetActive(false);
         cameraMoving = true;
         wyattMoving = true;
-        while (cameraMoving || wyattMoving) {
+        while (cameraMoving || wyattMoving || Time.timeScale == 0) {
             yield return null;
         }
+        yield return new WaitForSeconds(1);
+        text.gameObject.transform.parent.gameObject.SetActive(true);
+        yield return runDialogue(@"J: So there you all are. Took long enough.
+W: Jeremy Germ.
+R: Eek!
+W: You are a plague on mankind.
+J: Let's save the insults for later, Wyatt. I'm sure you have a reason to be here?
+W: I'm here to end you.
+J: Hah, with your ragtag group of cells? Don't kid me.
+W: We've already blasted through your cronies.
+J: Woah, really? I like your courage. Tell you what, I'll leave if you answer all the answers on this quiz. However, if you  After all, knowledge is power.
+W: This should be easy. Let's get this!
+P: A quiz? I love quizzes!".Split('\n'));
+        text.gameObject.transform.parent.gameObject.SetActive(false);
         canvas.SetActive(true);
         initQuestion();
+    }
 
+    IEnumerator Win() {
+        yield return runDialogue(@"J: You got me. Quite impressive. I'm a man of my word, so I'll be on the way out.".Split('\n'));
+        jeremydying = true;
+        while (jeremydying || Time.timeScale == 0) {
+            yield return null;
+        }
+        yield return runDialogue(@"R: We did it! We did it!
+W: That we did. Good work team.
+P: That's going in the history books!".Split('\n'));
+        winScreen.SetActive(true);
+        wyatt.SetActive(false);
+        canvas.SetActive(false);
     }
 
     // Update is called once per frame
@@ -62,6 +98,14 @@ public class QuizController : Controller
             }
             wyatt.transform.position = newPos;
         }
+        if (jeremydying) {
+            Color c = jeremy.GetComponent<SpriteRenderer>().color;
+            c.a = Mathf.Clamp(c.a - Time.deltaTime/3f, 0, 1);
+            jeremy.GetComponent<SpriteRenderer>().color = c;
+            if (c.a == 0) {
+                jeremydying = false;
+            }
+        }
     }
 
     void initQuestion() {
@@ -80,13 +124,13 @@ public class QuizController : Controller
         if (choice == correctAnswer) {
             choice = 0;
             questionNumber++;
-            if (questionNumber < 5) {
+            if (questionNumber < 1) {
                 initQuestion();
             } else {
                 //Win
-                winScreen.SetActive(true);
-            wyatt.SetActive(false);
-            canvas.SetActive(false);
+                canvas.SetActive(false);
+                StartCoroutine("Win");
+                
             }
         } else {
             //loss WIP
