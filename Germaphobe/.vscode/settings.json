@@ -2,7 +2,8 @@
     "files.exclude": {
         "**/.DS_Store": true,
         "**/.git": true,
-        "**/.gitmodules": true,
+        "<<<<<<<HEAD=======**/.gitignore": true,
+        ">>>>>>>ed745911ffb1f4d777a4325c1c75757e1f50c545**/.gitmodules": true,
         "**/*.booproj": true,
         "**/*.pidb": true,
         "**/*.suo": true,
@@ -51,6 +52,7 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Germaphobe.sln",
-    "editor.insertSpaces": false
+    "<<<<<<<HEADdotnet.defaultSolution": "Germaphobe.sln",
+    "false=======dotnet.defaultSolution": "Germaphobe.sln>>>>>>>ed745911ffb1f4d777a4325c1c75757e1f50c545",
+    "dotnet.defaultSolution": "Germaphobe.sln"
 }
