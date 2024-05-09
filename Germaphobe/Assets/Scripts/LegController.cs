@@ -10,18 +10,18 @@ public class LegController : Controller
 {
 
     public GameObject screen;
-    private string dialogueStr = @"P: Ah, the femoral artery! Only the biggest and best highway down south. What a marvel. 
-P: It’s been a while since I’ve laid my eyes on such a beautiful masterpiece of arteritecture.
+    private string dialogueStr = @"P: Ah, the femoral artery! Only the biggest and best highway down south. What a marvel.  
+P: It's been a while since I've laid my eyes on such a beautiful masterpiece of arteritecture.
 R: Arteri what now? Where are we going?
-W: To the heart.
-R: That far? That’s a long distance though…
-W: Don’t worry Redd, we got this! B positive.
-R: Umm, I don’t know… I’m O negative.";
+W: To the heart. The artery carries other blood cells like you to the heart so that The Host gets the oxygen he needs.
+R: That far? That's a long distance though.
+W: Don't worry Redd, we got this! B positive.
+R: Umm, I don't know, I'm O negative.";
     private string dialogueStr2 = @"P: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
-W: Thanks, Plato.
+W: Thanks, Plato. I really like Zinc because it reinforces my natural mineral concentration artifically!
 P: No problem. Zinc is super healthy for white blood cells like you.
-W: We’ve reached the stomach, so leave the zinc behind. There'll be more later.
-P: Alright then, let’s go!";
+W: We've reached the stomach, so leave the zinc behind. There'll be more later. Watch out for the falling stomach acid, it won't hurt you but it will weigh you down and obstruct you on your path.
+P: Alright then, let's go. Oh look, a key conveniently placed at the end of the level. I wonder if this unlocks the gateway to the heart inside the stomach ;)";
 
     public GameObject wyatt;
     public GameObject rnaPiece;
@@ -113,7 +113,7 @@ P: Alright then, let’s go!";
         }
         spacePressed = false;
         Destroy(melee);
-        yield return runDialogue(new string[]{ "W: I know, I know."});
+        yield return runDialogue(new string[]{ "W: I know, I know. After all, if the virus infects me I might turn over to their side and harm the host."});
     }
     
     IEnumerator rangedTutorial()
@@ -131,8 +131,8 @@ P: Alright then, let’s go!";
         }
         Debug.Log("hi2");
         text.gameObject.transform.parent.gameObject.SetActive(true);
-        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it’s the most common type of antibody in the blood?");
-        yield return runDialogue("W: Yeah, we know. I’m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
+        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it's the most common type of antibody in the blood?");
+        yield return runDialogue("W: Yeah, we know. I'm a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
         yield return runDialogue("P: That's true! However, I think the viruses that just come at you are immune. Be sure to eat them before they eat you.");
         yield return runDialogue("W: Got it. I see more ahead. Let's blast these viruses to outer space.");
     }

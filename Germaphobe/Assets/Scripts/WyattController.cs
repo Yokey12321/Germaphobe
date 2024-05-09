@@ -36,6 +36,7 @@ public class WyattController : MonoBehaviour
     Animator animator;
 
     public GameObject wyattLivesBar;
+    public bool ate;
 
     // Start is called before the first frame update
     protected virtual void Start()
@@ -45,6 +46,7 @@ public class WyattController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         currentHealth = maxHealth;
+        ate = false;
     }
 
     // Update is called once per frame
@@ -71,7 +73,7 @@ public class WyattController : MonoBehaviour
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
                 isInvincible = false;
-        }   
+        }
 
     }
 
@@ -129,6 +131,7 @@ public class WyattController : MonoBehaviour
         {
             Destroy(eatableViruses[0]);
             eatingParticles.Play();
+            ate = true;
         }
     }
 

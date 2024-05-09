@@ -7,12 +7,15 @@ public class WyattStomach : WyattController
     public float rotationSpeed;
     private float dashTimer = 0;
     public float dashCooldown;
-
+    public bool hasKey;
+    
+    public WyattCollider wyattCollider;
     // Start is called before the first frame update
     new void Start()
     {
         base.Start();
         lookdir = Vector2.right;
+        hasKey = true;
     }
 
     // Update is called once per frame
@@ -24,6 +27,12 @@ public class WyattStomach : WyattController
             Dash();
             dashTimer = 0;
         }
+
+        if(ate){
+            wyattCollider.enemiesKilled++;
+            Debug.Log("Enemies killed: " + wyattCollider.enemiesKilled);
+            ate = false;
+        }
     }
 
     protected new void FixedUpdate()
@@ -32,37 +41,6 @@ public class WyattStomach : WyattController
         dashTimer = Mathf.Clamp(dashTimer + Time.deltaTime, 0, dashCooldown);
         if (!(Mathf.Floor(horizontal) == 0 && Mathf.Floor(vertical) == 0))
         {
-            /*
-            float originalangle = Vector2.SignedAngle(Vector2.right, lookdir) + 170;
-            float targetangle = Vector2.SignedAngle(Vector2.right, new Vector2(Mathf.Floor(horizontal), Mathf.Floor(vertical))) + 170;
-            float delangle = Mathf.Abs(originalangle - targetangle);
-            float finalangle;
-            
-            if (delangle > 180)
-            {
-                if (targetangle > originalangle)
-                {
-                    finalangle = Mathf.Clamp((originalangle + 360 - rotationSpeed * Time.deltaTime), originalangle + 360, targetangle) % 360 - 170;
-                } else
-                {
-                    finalangle = Mathf.Clamp((originalangle + rotationSpeed * Time.deltaTime), targetangle, originalangle + 360) % 360 - 170;
-                }
-            }
-            else
-            {
-                if (targetangle > originalangle)
-                {
-                    finalangle = Mathf.Clamp((originalangle + rotationSpeed * Time.deltaTime), originalangle, targetangle) % 360 - 170;
-                }
-                else
-                {
-                    finalangle = Mathf.Clamp((originalangle - rotationSpeed * Time.deltaTime), targetangle, originalangle) % 360 - 170;
-                }
-            }
-            Debug.Log("f" + finalangle);
-            lookdir = Quaternion.AngleAxis(finalangle, Vector3.forward) * Vector2.right;
-            transform.rotation = Quaternion.Euler(0, 0, finalangle);
-            */
             rigidbody2d.AddForce(new Vector2(horizontal, vertical) * speed * Time.deltaTime, ForceMode2D.Impulse);
             base.lookdir = Quaternion.AngleAxis(Vector2.SignedAngle(Vector2.right, new Vector2(horizontal, vertical)), Vector3.forward) * Vector2.right;
             transform.rotation = Quaternion.Euler(0, 0, Vector2.SignedAngle(Vector2.right, new Vector2(horizontal, vertical)));
