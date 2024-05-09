@@ -107,7 +107,7 @@ P: Alright then, let's go. Oh look, a key conveniently placed at the end of the 
         spawnMelee();
         text.gameObject.transform.parent.gameObject.SetActive(true);
         yield return runLineDialog("P: Hey guys... Virus ahead! Quick, Wyatt press SPACE to eat them!");
-        while (meleeMoving || !spacePressed)
+        while (meleeMoving || !spacePressed || Time.timeScale == 0)
         {
             yield return null;
         }
@@ -124,7 +124,7 @@ P: Alright then, let's go. Oh look, a key conveniently placed at the end of the 
         text.gameObject.transform.parent.gameObject.SetActive(true);
         yield return runLineDialog("W: I do. Time to press C and shoot them away!");
         rangedMoving = true;
-        while (ranged != null)
+        while (ranged != null || Time.timeScale == 0)
         {
             yield return null;
             Debug.Log("hi");
