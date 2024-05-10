@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ZincSpawner : Spawner
 {
@@ -34,7 +35,11 @@ public class ZincSpawner : Spawner
         GameObject Zinc;
 
         Zinc = Instantiate(ZincPrefab, transform);
-        Zinc.transform.position = GameObject.Find("wyatt").gameObject.transform.position +  new Vector3(UnityEngine.Random.Range(-3, 3), UnityEngine.Random.Range(-3, 3), 0);
+        if (GameObject.Find("wyatt") == null) {
+            running = false;
+            return;
+        }
+        Zinc.transform.position = GameObject.Find("wyatt").gameObject.transform.position +  new Vector3(SceneManager.GetActiveScene().name == "Stomach" ? UnityEngine.Random.Range(-3, 3) : 0, UnityEngine.Random.Range(-3, 3), 0);
 
     }
 

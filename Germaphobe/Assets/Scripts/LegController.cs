@@ -33,6 +33,7 @@ P: Alright then, let's go!";
     private GameObject melee;
     private GameObject ranged;
     private bool spacePressed = false;
+    public GameObject lose;
 
     new void Start()
     {
@@ -46,6 +47,9 @@ P: Alright then, let's go!";
         if (Input.GetKeyDown(KeyCode.Space))
         {
             spacePressed = true;
+        }
+        if (wyatt == null || wyatt.GetComponent<WyattController>().health == 0) {
+            Invoke("Lose", 2);
         }
     }
 
@@ -176,6 +180,17 @@ P: Alright then, let's go!";
             }
             melee.transform.position = newPos;
         }
+    }
+
+    void Lose() {
+        Time.timeScale = 0;
+        Debug.Log("ihasudbsad");
+        lose.SetActive(true);
+    }
+
+    public void Restart() {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("Leg");
     }
 
 }

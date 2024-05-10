@@ -24,7 +24,7 @@ public class WyattController : MonoBehaviour
     public int health { get { return currentHealth; } }
     int currentHealth;
 
-    public float timeInvincible = 0.8f;
+    public float timeInvincible = 0.6f;
     bool isInvincible;
     float invincibleTimer;
 

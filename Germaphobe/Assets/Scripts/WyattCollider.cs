@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WyattCollider : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class WyattCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enemiesKilled >= 1){
+        if(enemiesKilled >= 1 && SceneManager.GetActiveScene().name == "Stomach"){
             lockToActivate.SetActive(true);
             enemiesKilled = 0;
         }

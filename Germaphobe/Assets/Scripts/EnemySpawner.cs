@@ -30,7 +30,7 @@ public class EnemySpawner : Spawner
             if (time > timeToNextSpawn)
             {
                 time = 0;
-                timeToNextSpawn = UnityEngine.Random.Range(5, 10);
+                timeToNextSpawn = UnityEngine.Random.Range(2, 5);
                 Spawn();
             }
         }
