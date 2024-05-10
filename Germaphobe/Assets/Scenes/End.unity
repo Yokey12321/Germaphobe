@@ -2885,8 +2885,7 @@ MonoBehaviour:
   text: {fileID: 1307494581}
   icon: {fileID: 1279585322}
   sprites: {fileID: 537652704}
-  questions:
-  - test, test, !test, test, test
+  questions: []
   answerTexts:
   - {fileID: 840334261}
   - {fileID: 669580181}

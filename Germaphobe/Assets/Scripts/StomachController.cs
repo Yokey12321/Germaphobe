@@ -27,7 +27,7 @@ public class StomachController : Controller
     {
         base.Prewarm();
         text.gameObject.transform.parent.gameObject.SetActive(true);
-        yield return runDialogue(@"P: It's the stomach!
+        yield return runDialogue(@"P: It's the stomach! This is the part that The Host uses to break down nutrients, and it powers Wyatt up!
 W: We're here!
 P: And so are the viruses.
 W: Let's just eliminate them quickly. I'm getting a bad feeling in my gut.

@@ -8,7 +8,9 @@ public class QuizController : Controller
 {
 
     private int choice = 0;
-    public string[] questions = "test, test, !test, test, test".Split('\n');
+    private string[] questions = @"Why is the stomach important to nosy white blood cells like you Wyatt?, Stomach acid tastes really good, !It breaks down nutrients that make Wyatt stronger, The Host uses the stomach to provide Wyatt with oxygen, It provides a place for Wyatt to sleep
+What is IgG?, !The most common antibody found in white blood cells like Wyatt, A reinforcing artificial material that makes Wyatt stronger, The material that helps Redd carry oxygen, The reason why Plato Leto is such a nerd
+What are arteries used for?, Transporting blood from the heart to the body, ".Split('\n');
     public TMP_Text[] answerTexts;
     public TMP_Text questionText;
     private int questionNumber = 0;
@@ -109,6 +111,7 @@ P: That's going in the history books!".Split('\n'));
     }
 
     void initQuestion() {
+        Debug.Log(questions);
         string question = questions[questionNumber];
         string[] questionData = question.Split(", ");
         questionText.text = questionData[0];
@@ -124,7 +127,7 @@ P: That's going in the history books!".Split('\n'));
         if (choice == correctAnswer) {
             choice = 0;
             questionNumber++;
-            if (questionNumber < 1) {
+            if (questionNumber < questions.Length) {
                 initQuestion();
             } else {
                 //Win

@@ -15,12 +15,12 @@ P: It's been a while since I've laid my eyes on such a beautiful masterpiece of 
 R: Arteri-what now? Where are we going?
 W: To the heart. The artery, Redd, is what transports red blood cells like you to the Heart of The Host. Without it, The Host wouldn't get the oxygen he needs.
 R: That far? That's a long distance though!
-W: It's true. The artery from the Leg to the Heart is Don't worry Redd, we got this! B positive.
+W: It's true. The artery from the Leg to the Heart is anywhere from 3-5ft in distance. Don't worry Redd, we got this! B positive.
 R: Umm, I don't know, I'm O negative.";
     private string dialogueStr2 = @"P: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
-W: Thanks, Plato.
+W: Thanks, Plato. I'm glad you remembered that Zinc artificially reinforces my immunity to other diseases, so that I can fight them off.
 P: No problem. Zinc is super healthy for white blood cells like you.
-W: We've reached the stomach, so leave the zinc behind. There'll be more later.
+W: We've reached the entrance of that stomach. Hey that key looks important. We should probably keep it.
 P: Alright then, let's go!";
 
     public GameObject wyatt;
@@ -117,7 +117,7 @@ P: Alright then, let's go!";
         }
         spacePressed = false;
         Destroy(melee);
-        yield return runDialogue(new string[]{ "W: I know, I know."});
+        yield return runDialogue(new string[]{ "W: I know, I know. I'm a white blood cell. I eat viruses for breakfast."});
     }
     
     IEnumerator rangedTutorial()
