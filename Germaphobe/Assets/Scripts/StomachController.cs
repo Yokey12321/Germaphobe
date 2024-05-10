@@ -13,6 +13,7 @@ public class StomachController : Controller
     void Start()
     {
         StartCoroutine("StartSceneFlow");
+        //what the heck
     }
 
     // Update is called once per frame
