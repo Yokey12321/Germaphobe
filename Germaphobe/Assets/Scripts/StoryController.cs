@@ -16,7 +16,7 @@ public class StoryController : MonoBehaviour
     private string introStr = @" 50 years ago, the residents of The Host faced their greatest threat: Jeffrey Germ. 
  He was a notorious virus that wreaked havoc on the body during Germ War II.
  He launched the GermNuke3000, a weapon of mass infection.
- Despite the Immune Forces’ best efforts, the GermNuke was too powerful.
+ Despite the Immune Forces' best efforts, the GermNuke was too powerful.
  Eventually, the Immune Forces were able to defeat Jeffrey Germ, but not without great loss.
  Now, Jeffrey's son, Jeremy Germ, has returned to avenge his father's defeat.
  Only one cell stands in his way: Wyatt Sangre.";

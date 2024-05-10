@@ -11,17 +11,17 @@ public class LegController : Controller
 
     public GameObject screen;
     private string dialogueStr = @"P: Ah, the femoral artery! Only the biggest and best highway down south. What a marvel. 
-P: It�s been a while since I�ve laid my eyes on such a beautiful masterpiece of arteritecture.
-R: Arteri what now? Where are we going?
-W: To the heart.
-R: That far? That�s a long distance though�
-W: Don�t worry Redd, we got this! B positive.
-R: Umm, I don�t know� I�m O negative.";
+P: It's been a while since I've laid my eyes on such a beautiful masterpiece of arteritecture.
+R: Arteri-what now? Where are we going?
+W: To the heart. The artery, Redd, is what transports red blood cells like you to the Heart of The Host. Without it, The Host wouldn't get the oxygen he needs.
+R: That far? That's a long distance though!
+W: It's true. The artery from the Leg to the Heart is Don't worry Redd, we got this! B positive.
+R: Umm, I don't know, I'm O negative.";
     private string dialogueStr2 = @"P: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
 W: Thanks, Plato.
 P: No problem. Zinc is super healthy for white blood cells like you.
-W: We�ve reached the stomach, so leave the zinc behind. There'll be more later.
-P: Alright then, let�s go!";
+W: We've reached the stomach, so leave the zinc behind. There'll be more later.
+P: Alright then, let's go!";
 
     public GameObject wyatt;
     public GameObject rnaPiece;
@@ -131,8 +131,8 @@ P: Alright then, let�s go!";
         }
         Debug.Log("hi2");
         text.gameObject.transform.parent.gameObject.SetActive(true);
-        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it�s the most common type of antibody in the blood?");
-        yield return runDialogue("W: Yeah, we know. I�m a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
+        yield return runDialogue("P: Nice! Make sure to keep an IgG ahead. Speaking of IgG, did you know it's the most common type of antibody in the blood?");
+        yield return runDialogue("W: Yeah, we know. I'm a white blood cell after all. You saw the B Cell blaster. The things I shoot are IgG.");
         yield return runDialogue("P: That's true! However, I think the viruses that just come at you are immune. Be sure to eat them before they eat you.");
         yield return runDialogue("W: Got it. I see more ahead. Let's blast these viruses to outer space.");
     }

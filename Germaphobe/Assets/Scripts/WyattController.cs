@@ -37,6 +37,9 @@ public class WyattController : MonoBehaviour
 
     public GameObject wyattLivesBar;
 
+
+    
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -72,6 +75,7 @@ public class WyattController : MonoBehaviour
             if (invincibleTimer < 0)
                 isInvincible = false;
         }   
+
 
     }
 
@@ -128,6 +132,9 @@ public class WyattController : MonoBehaviour
         if (eatableViruses.Count > 0)
         {
             Destroy(eatableViruses[0]);
+            WyattCollider wyattCollider = GameObject.Find("wyatt").GetComponentInChildren<WyattCollider>();
+            wyattCollider.enemiesKilled++;
+            Debug.Log("Enemies killed: " + wyattCollider.enemiesKilled);
             eatingParticles.Play();
         }
     }

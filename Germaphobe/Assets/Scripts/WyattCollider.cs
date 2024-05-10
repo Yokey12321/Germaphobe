@@ -10,16 +10,22 @@ public class WyattCollider : MonoBehaviour
     WyattController wyattController;
     AudioSource audioSource;
 
+    public GameObject lockToActivate;
+    public int enemiesKilled;
     void Start()
     {
         wyattController = wyatt.GetComponent<WyattController>();
         audioSource = GetComponent<AudioSource>(); 
+        enemiesKilled = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(enemiesKilled >= 1){
+            lockToActivate.SetActive(true);
+            enemiesKilled = 0;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -34,6 +34,9 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.GetComponent<RangedVirus>() != null)
         {
             collision.gameObject.GetComponent<RangedVirus>().deathAnimation();
+            WyattCollider wyattCollider = GameObject.Find("wyatt").GetComponentInChildren<WyattCollider>();
+            wyattCollider.enemiesKilled++;
+            Debug.Log("Enemies killed: " + wyattCollider.enemiesKilled);
             /*Destroy(collision.gameObject);*/
             Destroy(gameObject);
         }
