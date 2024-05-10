@@ -263,6 +263,8 @@ MonoBehaviour:
   text: {fileID: 1709358147}
   icon: {fileID: 1108754421}
   sprites: {fileID: 1419676646}
+  lose: {fileID: 1360337231}
+  wyatt: {fileID: 0}
 --- !u!4 &523929359
 Transform:
   m_ObjectHideFlags: 0

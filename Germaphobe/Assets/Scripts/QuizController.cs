@@ -10,7 +10,9 @@ public class QuizController : Controller
     private int choice = 0;
     private string[] questions = @"Why is the stomach important to nosy white blood cells like you Wyatt?, Stomach acid tastes really good, !It breaks down nutrients that make Wyatt stronger, The Host uses the stomach to provide Wyatt with oxygen, It provides a place for Wyatt to sleep
 What is IgG?, !The most common antibody found in white blood cells like Wyatt, A reinforcing artificial material that makes Wyatt stronger, The material that helps Redd carry oxygen, The reason why Plato Leto is such a nerd
-What are arteries used for?, Transporting blood from the heart to the body, ".Split('\n');
+What are arteries used for?, Transporting blood from the heart to the body, Feeding the white blood cells food, Allowing cells to leave on vacation, !Transporting blood from the body to the heart
+What do platelettes like Plato Leto do?, Yap too much, Kill other white blood cells, !Help with blood clotting, Make germs stronger
+Last question, this one's tricky: What is Redd's blood type?, B Positive, !O Negative, A Postive, O Postive".Split('\n');
     public TMP_Text[] answerTexts;
     public TMP_Text questionText;
     private int questionNumber = 0;

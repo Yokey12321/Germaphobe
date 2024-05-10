@@ -19,7 +19,7 @@ W: It's true. The artery from the Leg to the Heart is anywhere from 3-5ft in dis
 R: Umm, I don't know, I'm O negative.";
     private string dialogueStr2 = @"P: Hey Wyatt, I picked up some of that floating Zinc to heal you back to max health in the stomach.
 W: Thanks, Plato. I'm glad you remembered that Zinc artificially reinforces my immunity to other diseases, so that I can fight them off.
-P: No problem. Zinc is super healthy for white blood cells like you.
+P: No problem. After all, as a platelette which helps with blood clotting, I know how important it is to keep you healthy.
 W: We've reached the entrance of that stomach. Hey that key looks important. We should probably keep it.
 P: Alright then, let's go!";
 
