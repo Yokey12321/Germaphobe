@@ -1589,7 +1589,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3409353369398972565, guid: 2643a07e24be7c84ca51fc5c936fd3a5, type: 3}
       propertyPath: m_Volume
-      value: 0.696
+      value: 0.355
       objectReference: {fileID: 0}
     - target: {fileID: 8070933285602272102, guid: 2643a07e24be7c84ca51fc5c936fd3a5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2885,7 +2885,6 @@ MonoBehaviour:
   text: {fileID: 1307494581}
   icon: {fileID: 1279585322}
   sprites: {fileID: 537652704}
-  questions: []
   answerTexts:
   - {fileID: 840334261}
   - {fileID: 669580181}

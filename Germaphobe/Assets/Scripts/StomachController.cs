@@ -19,9 +19,9 @@ public class StomachController : Controller
     // Update is called once per frame
     void Update()
     {
-        // if (wyatt == null || wyatt.GetComponent<WyattController>().health == 0) {
-        //     Invoke("Lose", 2);
-        // }
+        if (wyatt == null || wyatt.GetComponent<WyattController>().health == 0) {
+            Invoke("Lose", 2);
+        }
     }
 
     IEnumerator StartSceneFlow()

@@ -23,11 +23,14 @@ public class MeleeVirus : MonoBehaviour
                 
             }
         } else {
-            Vector2 dir = GameObject.Find("wyatt").transform.position - transform.position;
-            Quaternion lookRot = Quaternion.LookRotation(dir);
-            lookRot.x = 0; lookRot.y = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRot, Mathf.Clamp01(3.0f * Time.maximumDeltaTime));
-            transform.Translate(dir.normalized * speed/10 * Time.deltaTime);
+            if(GameObject.Find("wyatt") != null)
+            {
+                Vector2 dir = GameObject.Find("wyatt").transform.position - transform.position;
+                Quaternion lookRot = Quaternion.LookRotation(dir);
+                lookRot.x = 0; lookRot.y = 0;
+                transform.rotation = Quaternion.Slerp(transform.rotation, lookRot, Mathf.Clamp01(3.0f * Time.maximumDeltaTime));
+                transform.Translate(dir.normalized * speed/10 * Time.deltaTime);
+            }
         }
     }
 
