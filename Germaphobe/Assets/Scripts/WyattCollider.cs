@@ -23,7 +23,7 @@ public class WyattCollider : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(enemiesKilled >= 1 && SceneManager.GetActiveScene().name == "Stomach"){
+        if(enemiesKilled >= 30 && SceneManager.GetActiveScene().name == "Stomach"){
             lockToActivate.SetActive(true);
             enemiesKilled = 0;
         }

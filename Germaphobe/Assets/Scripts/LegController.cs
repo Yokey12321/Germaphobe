@@ -64,7 +64,7 @@ P: Alright then, let's go!";
         base.Start();
         screen.GetComponent<ScreenControls>().StartMotion();
         yield return new WaitForSeconds(1);
-        yield return new WaitForSeconds(30f);
+        yield return new WaitForSeconds(300f);
         base.End();
         spawnRna();
         yield return new WaitForSeconds(2f);
